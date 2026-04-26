@@ -2490,3 +2490,467 @@ h3 {
 .service-ticker::after {
     background: linear-gradient(270deg, rgba(231, 234, 237, 0.98), transparent) !important;
 }
+/* ================================
+   PREMIUM GLOBAL POLISH
+   tighter spacing / cleaner rhythm
+================================ */
+
+/* общий ритм секций */
+.section {
+    padding-top: clamp(28px, 4vw, 56px);
+    padding-bottom: clamp(28px, 4vw, 56px);
+}
+
+.section--tight {
+    padding-top: clamp(18px, 2.4vw, 34px);
+    padding-bottom: clamp(18px, 2.4vw, 34px);
+}
+
+/* hero-секции компактнее */
+.home-hero,
+.services-hero,
+.about-hero,
+.contact-hero,
+.service-hero,
+.legal-hero {
+    padding-top: clamp(26px, 4vw, 58px);
+    padding-bottom: clamp(34px, 5vw, 72px);
+}
+
+/* заголовки секций ближе к контенту */
+.section-head {
+    gap: clamp(16px, 2.6vw, 34px);
+    margin-bottom: clamp(22px, 3.2vw, 42px);
+}
+
+/* текст в секциях аккуратнее */
+.section-head p,
+.text-lead {
+    max-width: 620px;
+}
+
+/* карточки становятся более premium и одинаковыми */
+.info-card,
+.value-card,
+.snapshot-card,
+.match-card,
+.process-node,
+.journey-step,
+.service-card,
+.compare-card {
+    border-color: rgba(17, 20, 23, 0.10);
+    box-shadow: 0 14px 38px rgba(17, 20, 23, 0.055);
+}
+
+/* hover менее резкий, дороже */
+.info-card:hover,
+.value-card:hover,
+.snapshot-card:hover,
+.match-card:hover,
+.process-node:hover,
+.journey-step:hover,
+.service-card:hover,
+.compare-card:hover {
+    transform: translateY(-4px);
+    border-color: rgba(46, 156, 139, 0.26);
+    box-shadow: 0 20px 52px rgba(17, 20, 23, 0.085);
+}
+
+/* фото-карточки одинаковее и спокойнее */
+.photo-card {
+    min-height: 340px;
+    border-radius: 30px;
+}
+
+.photo-card-content {
+    gap: 10px;
+    padding: clamp(20px, 2.4vw, 28px);
+}
+
+.photo-card h3 {
+    font-size: clamp(1.35rem, 2vw, 2rem);
+}
+
+.photo-card p {
+    max-width: 440px;
+    font-size: 0.94rem;
+    line-height: 1.55;
+}
+
+/* затемнение фото мягче и дороже */
+.photo-card::before {
+    background:
+        linear-gradient(180deg, rgba(5, 6, 7, 0.04), rgba(5, 6, 7, 0.62)),
+        linear-gradient(90deg, rgba(5, 6, 7, 0.48), transparent 66%);
+}
+
+/* меньше “прыжков” на hover */
+.photo-card:hover img {
+    transform: scale(1.035);
+    filter: saturate(1.02) contrast(1.02);
+}
+
+/* кнопки чуть компактнее и солиднее */
+.btn {
+    min-height: 48px;
+    padding-inline: 20px;
+    letter-spacing: 0.075em;
+}
+
+.btn-primary {
+    box-shadow: 0 14px 28px rgba(46, 156, 139, 0.20);
+}
+
+.btn-primary:hover {
+    box-shadow: 0 18px 34px rgba(37, 127, 114, 0.24);
+}
+
+/* иконки в карточках спокойнее */
+.icon-box,
+.value-card span,
+.snapshot-card span,
+.process-icon,
+.journey-icon {
+    box-shadow: none;
+}
+
+/* тёмные панели дороже */
+.dark-panel,
+.about-model-panel,
+.about-trust-panel,
+.request-panel {
+    background:
+        radial-gradient(circle at 12% 0%, rgba(46, 156, 139, 0.16), transparent 32%),
+        linear-gradient(145deg, #111417 0%, #1d2327 56%, #252b31 100%);
+}
+
+/* футер компактнее */
+.site-footer {
+    padding-top: clamp(46px, 6vw, 68px);
+}
+
+.footer-inner {
+    gap: clamp(28px, 5vw, 62px);
+}
+
+.footer-disclaimer {
+    margin-top: 30px;
+}
+
+/* cookie banner аккуратнее */
+.cookie-banner {
+    max-width: 900px;
+    border-radius: 24px;
+}
+
+.cookie-inner {
+    padding: 16px;
+}
+
+/* mobile rhythm */
+@media (max-width: 720px) {
+    .section {
+        padding-top: 24px;
+        padding-bottom: 24px;
+    }
+
+    .section--tight {
+        padding-top: 16px;
+        padding-bottom: 16px;
+    }
+
+    .home-hero,
+    .services-hero,
+    .about-hero,
+    .contact-hero,
+    .service-hero,
+    .legal-hero {
+        padding-top: 22px;
+        padding-bottom: 34px;
+    }
+
+    .section-head {
+        margin-bottom: 22px;
+    }
+
+    .photo-card {
+        min-height: 300px;
+        border-radius: 24px;
+    }
+
+    .btn {
+        min-height: 46px;
+        padding-inline: 17px;
+    }
+}
+
+/* ================================
+   REQUEST SECTION — TABLET / MOBILE COMPACT
+================================ */
+
+@media (max-width: 980px) {
+    .request-section {
+        padding-top: 24px !important;
+        padding-bottom: 24px !important;
+    }
+
+    .request-panel {
+        display: grid;
+        grid-template-columns: 1fr !important;
+        gap: 18px !important;
+        padding: 20px !important;
+        border-radius: 28px !important;
+    }
+
+    .request-copy {
+        gap: 12px !important;
+    }
+
+    .request-copy h2 {
+        max-width: 720px;
+        font-size: clamp(2rem, 7vw, 3rem);
+        line-height: 1;
+    }
+
+    .request-copy p {
+        max-width: 680px;
+        font-size: 0.96rem;
+        line-height: 1.55;
+    }
+
+    .request-mini-points {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        margin-top: 4px;
+    }
+
+    .request-mini-points span {
+        min-height: 34px;
+        padding: 0 11px;
+        border-radius: 999px;
+        font-size: 0.78rem;
+    }
+
+    .request-form.form-card,
+    .request-form {
+        padding: 18px !important;
+        border-radius: 24px !important;
+    }
+
+    .form-grid {
+        gap: 12px;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    .form-field {
+        gap: 6px;
+    }
+
+    .input-wrap input,
+    .input-wrap select {
+        min-height: 46px;
+        border-radius: 14px;
+    }
+
+    .input-wrap textarea {
+        min-height: 88px;
+        border-radius: 14px;
+    }
+
+    .custom-check {
+        gap: 9px;
+    }
+
+    .custom-check span:last-child {
+        font-size: 0.8rem;
+        line-height: 1.45;
+    }
+
+    .request-form .btn,
+    .request-form button[type="submit"] {
+        width: 100%;
+        min-height: 48px;
+    }
+}
+
+@media (max-width: 560px) {
+    .request-section {
+        padding-top: 18px !important;
+        padding-bottom: 18px !important;
+    }
+
+    .request-panel {
+        padding: 14px !important;
+        border-radius: 24px !important;
+        gap: 14px !important;
+    }
+
+    .request-copy h2 {
+        font-size: clamp(1.8rem, 10vw, 2.55rem);
+    }
+
+    .request-copy p {
+        font-size: 0.9rem;
+    }
+
+    .section-kicker {
+        margin-bottom: 10px;
+        font-size: 0.66rem;
+    }
+
+    .request-mini-points {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 7px;
+    }
+
+    .request-mini-points span {
+        justify-content: flex-start;
+        width: 100%;
+    }
+
+    .request-form.form-card,
+    .request-form {
+        padding: 14px !important;
+        border-radius: 20px !important;
+    }
+
+    .input-wrap input,
+    .input-wrap select {
+        min-height: 44px;
+    }
+
+    .input-wrap textarea {
+        min-height: 78px;
+    }
+
+    .input-wrap input,
+    .input-wrap select {
+        padding-left: 40px;
+    }
+
+    .input-wrap textarea {
+        padding-left: 40px;
+    }
+
+    .input-wrap svg {
+        left: 13px;
+        width: 17px;
+        height: 17px;
+    }
+
+    .request-form .btn,
+    .request-form button[type="submit"] {
+        min-height: 46px;
+        font-size: 0.68rem;
+    }
+}
+
+/* ================================
+   REQUEST SECTION — FORM ONLY ON TABLET / MOBILE
+================================ */
+
+@media (max-width: 980px) {
+    .request-section .request-copy {
+        display: none !important;
+    }
+
+    .request-section .request-panel {
+        display: block !important;
+        padding: 18px !important;
+        border-radius: 28px !important;
+    }
+
+    .request-section .request-form,
+    .request-section .form-card {
+        width: 100%;
+        max-width: 680px;
+        margin-inline: auto;
+        padding: 18px !important;
+        border-radius: 24px !important;
+    }
+
+    .request-section .form-grid {
+        gap: 12px !important;
+    }
+
+    .request-section .form-row {
+        grid-template-columns: 1fr !important;
+        gap: 12px !important;
+    }
+
+    .request-section .input-wrap input,
+    .request-section .input-wrap select {
+        min-height: 46px;
+        border-radius: 14px;
+    }
+
+    .request-section .input-wrap textarea {
+        min-height: 82px;
+        border-radius: 14px;
+    }
+
+    .request-section .btn,
+    .request-section button[type="submit"] {
+        width: 100%;
+        min-height: 48px;
+    }
+}
+
+@media (max-width: 560px) {
+    .request-section {
+        padding-top: 18px !important;
+        padding-bottom: 18px !important;
+    }
+
+    .request-section .request-panel {
+        padding: 12px !important;
+        border-radius: 22px !important;
+    }
+
+    .request-section .request-form,
+    .request-section .form-card {
+        padding: 14px !important;
+        border-radius: 20px !important;
+    }
+
+    .request-section .input-wrap input,
+    .request-section .input-wrap select {
+        min-height: 44px;
+    }
+
+    .request-section .input-wrap textarea {
+        min-height: 70px;
+    }
+
+    .request-section .custom-check span:last-child {
+        font-size: 0.78rem;
+        line-height: 1.4;
+    }
+
+    .request-section .btn,
+    .request-section button[type="submit"] {
+        min-height: 46px;
+        font-size: 0.68rem;
+    }
+}
+
+/* ================================
+   REQUEST FORM — TABLET HALF WIDTH
+================================ */
+
+@media (min-width: 721px) and (max-width: 980px) {
+
+    .request-section .request-form,
+    .request-section .form-card {
+        width: 50% !important;
+        max-width: 520px !important;
+        min-width: 420px;
+        margin-inline: auto !important;
+    }
+}

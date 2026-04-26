@@ -1503,3 +1503,137 @@
         animation: none;
     }
 }
+
+/* ================================
+   ABOUT PREMIUM FINAL POLISH
+================================ */
+
+/* counters спокойнее */
+.about-counters-section {
+    padding-top: clamp(10px, 1.6vw, 18px);
+    padding-bottom: clamp(18px, 2.2vw, 28px);
+}
+
+.about-counter-item {
+    min-height: 104px;
+    border-radius: 22px;
+    background:
+        linear-gradient(145deg, rgba(255, 255, 255, 0.82), rgba(238, 240, 242, 0.66));
+}
+
+/* story меньше по высоте */
+.about-story-image {
+    min-height: 500px;
+}
+
+.about-story-image img {
+    min-height: 500px;
+}
+
+/* snapshot-карта компактнее */
+.about-snapshot-panel {
+    padding: clamp(18px, 3vw, 34px);
+}
+
+.about-snapshot-map {
+    min-height: 390px;
+}
+
+.about-snapshot-content {
+    gap: 14px;
+}
+
+.about-snapshot-list {
+    gap: 10px;
+}
+
+.about-snapshot-list article {
+    padding: 14px;
+}
+
+/* model section чуть ниже и плотнее */
+.about-model-section {
+    padding-top: clamp(28px, 4vw, 56px);
+}
+
+.about-model-panel {
+    padding: clamp(22px, 4vw, 48px);
+}
+
+.about-model-copy {
+    margin-bottom: clamp(22px, 3vw, 36px);
+}
+
+/* journey cards меньше */
+.journey-step {
+    min-height: 220px;
+}
+
+.journey-icon {
+    margin-bottom: 42px;
+}
+
+/* values меньше и ровнее */
+.value-card {
+    min-height: 240px;
+    padding: 22px;
+}
+
+.value-card span {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.value-card svg {
+    width: 23px;
+    height: 23px;
+}
+
+/* trust section компактнее */
+.about-trust-panel {
+    padding: clamp(22px, 3.5vw, 42px);
+}
+
+.about-trust-cards article {
+    min-height: 220px;
+}
+
+/* CTA меньше */
+.about-cta {
+    padding: clamp(24px, 4vw, 46px);
+}
+
+/* mobile fixes */
+@media (max-width: 720px) {
+    .about-story-image {
+        min-height: 380px;
+    }
+
+    .about-story-image img {
+        min-height: 380px;
+    }
+
+    .about-snapshot-map {
+        min-height: 250px;
+    }
+
+    .story-note {
+        top: 14px;
+        left: 14px;
+        width: calc(100% - 28px);
+        padding: 12px;
+        border-radius: 18px;
+    }
+
+    .story-timeline-pins {
+        left: 14px;
+        right: 14px;
+        bottom: 14px;
+    }
+
+    .journey-step,
+    .about-trust-cards article {
+        min-height: auto;
+    }
+}
