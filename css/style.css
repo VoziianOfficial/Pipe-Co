@@ -2135,3 +2135,338 @@ body {
 .service-ticker:hover .service-ticker-track {
     animation-play-state: paused !important;
 }
+
+/* ================================
+   GLOBAL COMPACT LAYOUT SYSTEM
+   tighter sections + narrower content
+================================ */
+
+:root {
+    --container: 1080px;
+    --container-wide: 1240px;
+}
+
+/* общий размер секций */
+.section {
+    padding-top: clamp(22px, 3vw, 46px) !important;
+    padding-bottom: clamp(22px, 3vw, 46px) !important;
+}
+
+.section--tight {
+    padding-top: clamp(14px, 2vw, 28px) !important;
+    padding-bottom: clamp(14px, 2vw, 28px) !important;
+}
+
+/* hero на всех страницах ниже и компактнее */
+.home-hero,
+.services-hero,
+.about-hero,
+.contact-hero,
+.service-hero,
+.legal-hero {
+    min-height: auto !important;
+    padding-top: clamp(24px, 3vw, 48px) !important;
+    padding-bottom: clamp(24px, 3vw, 48px) !important;
+}
+
+/* если у тебя header fixed + ticker fixed */
+main {
+    padding-top: calc(var(--header-height) + var(--ticker-height) + 10px) !important;
+}
+
+/* компактные заголовки */
+h1 {
+    font-size: clamp(2.55rem, 6vw, 5.8rem) !important;
+    line-height: 0.98 !important;
+}
+
+h2 {
+    font-size: clamp(2rem, 4.2vw, 3.9rem) !important;
+    line-height: 1 !important;
+}
+
+h3 {
+    font-size: clamp(1.2rem, 2vw, 1.85rem) !important;
+}
+
+.text-lead {
+    max-width: 600px !important;
+    font-size: clamp(0.98rem, 1.25vw, 1.12rem) !important;
+    line-height: 1.55 !important;
+}
+
+/* меньше воздуха в шапках секций */
+.section-head {
+    gap: clamp(14px, 2vw, 28px) !important;
+    margin-bottom: clamp(18px, 2.2vw, 30px) !important;
+}
+
+.section-kicker {
+    margin-bottom: 12px !important;
+}
+
+/* компактнее сетки */
+.grid-2 {
+    gap: clamp(18px, 3vw, 36px) !important;
+}
+
+.grid-3 {
+    gap: 16px !important;
+}
+
+.grid-4 {
+    gap: 14px !important;
+}
+
+/* карточки меньше по высоте */
+.info-card {
+    padding: 18px !important;
+    border-radius: 22px !important;
+}
+
+.icon-box {
+    width: 44px !important;
+    height: 44px !important;
+    margin-bottom: 12px !important;
+    border-radius: 15px !important;
+}
+
+.icon-box svg {
+    width: 21px !important;
+    height: 21px !important;
+}
+
+/* фото-карточки ниже */
+.photo-card {
+    min-height: 300px !important;
+    border-radius: 26px !important;
+}
+
+.photo-card-content {
+    gap: 10px !important;
+    padding: clamp(18px, 2.4vw, 26px) !important;
+}
+
+.card-arrow {
+    width: 36px !important;
+    height: 36px !important;
+}
+
+/* hero visual меньше */
+.home-hero-visual,
+.services-hero-board,
+.about-hero-visual,
+.contact-hero-visual,
+.service-hero-visual {
+    min-height: clamp(360px, 44vw, 500px) !important;
+}
+
+/* hero grid компактнее */
+.home-hero-grid,
+.services-hero-grid,
+.about-hero-grid,
+.contact-hero-grid,
+.service-hero-grid {
+    gap: clamp(24px, 4vw, 58px) !important;
+}
+
+/* proof / маленькие блоки */
+.hero-proof {
+    gap: 10px !important;
+    margin-top: 4px !important;
+}
+
+.hero-proof div {
+    padding: 14px !important;
+    border-radius: 18px !important;
+}
+
+/* формы компактнее */
+.form-card {
+    padding: clamp(16px, 2.2vw, 24px) !important;
+    border-radius: 26px !important;
+}
+
+.form-grid {
+    gap: 11px !important;
+}
+
+.form-row {
+    gap: 11px !important;
+}
+
+.input-wrap input,
+.input-wrap select,
+.input-wrap textarea {
+    min-height: 44px !important;
+    border-radius: 14px !important;
+}
+
+.input-wrap textarea {
+    min-height: 86px !important;
+    max-height: 130px !important;
+}
+
+/* CTA panels компактнее */
+.request-panel,
+.service-cta-panel,
+.about-cta-panel,
+.contact-map-panel,
+.factor-panel,
+.area-panel {
+    padding: clamp(18px, 3vw, 42px) !important;
+    border-radius: 32px !important;
+}
+
+/* service pages */
+.service-overview-grid,
+.contact-main-grid,
+.about-model-grid {
+    gap: clamp(22px, 4vw, 54px) !important;
+}
+
+.service-detail-card,
+.contact-info-card,
+.factor-card {
+    padding: 18px !important;
+    border-radius: 22px !important;
+    min-height: auto !important;
+}
+
+/* FAQ компактнее */
+.faq-list {
+    gap: 9px !important;
+}
+
+.faq-question {
+    padding: 15px 18px !important;
+}
+
+.faq-answer-inner {
+    padding: 0 18px 16px !important;
+}
+
+/* footer компактнее */
+.site-footer {
+    padding-top: 42px !important;
+    padding-bottom: 20px !important;
+}
+
+.footer-inner {
+    gap: clamp(24px, 4vw, 56px) !important;
+}
+
+.footer-disclaimer {
+    margin-top: 28px !important;
+    padding: 16px !important;
+}
+
+.footer-bottom {
+    margin-top: 18px !important;
+    padding-top: 18px !important;
+}
+
+/* mobile */
+@media (max-width: 720px) {
+    :root {
+        --container: 100%;
+        --container-wide: 100%;
+    }
+
+    .container,
+    .container-wide {
+        width: min(100% - 24px, var(--container)) !important;
+    }
+
+    .section {
+        padding-top: 18px !important;
+        padding-bottom: 18px !important;
+    }
+
+    .home-hero,
+    .services-hero,
+    .about-hero,
+    .contact-hero,
+    .service-hero,
+    .legal-hero {
+        padding-top: 18px !important;
+        padding-bottom: 22px !important;
+    }
+
+    h1 {
+        font-size: clamp(2.35rem, 12vw, 3.7rem) !important;
+    }
+
+    h2 {
+        font-size: clamp(1.9rem, 9vw, 2.75rem) !important;
+    }
+
+    .photo-card {
+        min-height: 260px !important;
+    }
+
+    .home-hero-visual,
+    .services-hero-board,
+    .about-hero-visual,
+    .contact-hero-visual,
+    .service-hero-visual {
+        min-height: 340px !important;
+    }
+}
+
+/* ================================
+   PREMIUM MONOGRAM LOGO
+================================ */
+
+.logo-mark-word {
+    display: grid;
+    place-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 16px;
+    border: 1px solid rgba(17, 20, 23, 0.16);
+    background:
+        radial-gradient(circle at 28% 18%, rgba(255, 255, 255, 0.36), transparent 30%),
+        linear-gradient(145deg, #111417 0%, #2a3136 52%, #2e9c8b 100%);
+    box-shadow:
+        inset 0 1px 0 rgba(255, 255, 255, 0.22),
+        inset 0 -10px 18px rgba(0, 0, 0, 0.28),
+        0 14px 30px rgba(17, 20, 23, 0.18);
+    overflow: hidden;
+}
+
+.logo-mark-word::before {
+    content: "";
+    position: absolute;
+    inset: -45%;
+    background: linear-gradient(120deg,
+            transparent 26%,
+            rgba(255, 255, 255, 0.26),
+            transparent 70%);
+    transform: translateX(-85%) rotate(14deg);
+    transition: transform 800ms ease;
+}
+
+.logo:hover .logo-mark-word::before {
+    transform: translateX(85%) rotate(14deg);
+}
+
+.logo-mark-word span {
+    position: relative;
+    z-index: 1;
+    font-family: var(--font-heading);
+    font-size: 1.35rem;
+    font-weight: 800;
+    line-height: 1;
+    letter-spacing: -0.08em;
+    color: #ffffff;
+}
+
+.logo-mark-word::after {
+    content: "";
+    position: absolute;
+    inset: 1px;
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    pointer-events: none;
+}
