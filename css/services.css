@@ -53,40 +53,45 @@
     max-width: 650px;
 }
 
+/* ================= SERVICES HERO BOARD — PHOTO BACKGROUND ================= */
+
 .services-hero-board {
     position: relative;
     min-height: 560px;
     border: 1px solid var(--color-border);
     border-radius: 44px;
     background:
-        linear-gradient(145deg, rgba(17, 20, 23, 0.96), rgba(51, 55, 61, 0.9)),
-        var(--color-dark);
+        linear-gradient(180deg,
+            rgba(17, 20, 23, 0.18) 0%,
+            rgba(17, 20, 23, 0.34) 58%,
+            rgba(17, 20, 23, 0.52) 100%),
+        radial-gradient(circle at 84% 10%, rgba(46, 156, 139, 0.14), transparent 26%),
+        url("../assets/images/services/services-hero-board.jpg") center / cover no-repeat;
     box-shadow: var(--shadow-card);
     overflow: hidden;
+    isolation: isolate;
 }
 
 .services-hero-board::before {
     content: "";
     position: absolute;
     inset: 0;
+    z-index: 1;
     background:
-        linear-gradient(90deg, rgba(255, 255, 255, 0.07) 1px, transparent 1px),
-        linear-gradient(180deg, rgba(255, 255, 255, 0.06) 1px, transparent 1px);
-    background-size: 62px 62px;
-    opacity: 0.22;
+        linear-gradient(90deg,
+            rgba(17, 20, 23, 0.18) 0%,
+            rgba(17, 20, 23, 0.08) 46%,
+            rgba(17, 20, 23, 0.22) 100%);
     pointer-events: none;
 }
 
 .services-hero-board::after {
     content: "";
     position: absolute;
-    right: -90px;
-    top: -120px;
-    width: 340px;
-    height: 340px;
-    border-radius: 999px;
-    background: rgba(46, 156, 139, 0.22);
-    filter: blur(18px);
+    inset: 22px;
+    z-index: 2;
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    border-radius: 32px;
     pointer-events: none;
 }
 
