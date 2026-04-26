@@ -3522,3 +3522,43 @@ select:focus {
         min-height: 48px !important;
     }
 }
+
+/* Hide About story section on tablet and mobile */
+
+@media (max-width: 1180px) {
+    .about-story-section {
+        display: none !important;
+    }
+}
+
+@media (min-width: 721px) and (max-width: 1180px) {
+    .contact-form {
+        width: min(62%, 560px) !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+}
+
+@media (max-width: 1180px) {
+    .emergency-board-section{
+        display: none !important;
+    }
+}
+
+@media (max-width: 1180px) {
+    .water-heater-diagnostic-panel{
+        display: none !important;
+    }
+}
+
+@media (max-width: 1180px) {
+    .emergency-signal-panel {
+        display: none !important;
+    }
+}
+
+@media (max-width: 721px) {
+    .leak-radar-panel {
+        display: none !important;
+    }
+}
