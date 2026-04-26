@@ -19,66 +19,64 @@
     <a class="skip-link" href="#main">Skip to main content</a>
 
     <div class="page-shell">
-        <!-- ================= HEADER ================= -->
-        <header class="site-header" aria-label="Site header">
-            <div class="container-wide header-inner">
-                <a class="logo" href="index.html" aria-label="Pipe & Co home">
-                    <span class="logo-mark" aria-hidden="true">
-                        <i data-lucide="route"></i>
-                    </span>
+<!-- ================= HEADER ================= -->
+<header class="site-header" aria-label="Site header">
+    <div class="container-wide header-inner">
+        <a class="logo" href="index.html" aria-label="Pipe & Co home">
+            <span class="logo-mark" aria-hidden="true">
+                <i data-lucide="route"></i>
+            </span>
 
-                    <span class="logo-text">
-                        <span class="logo-name" data-company-name>Pipe & Co</span>
-                        <span class="logo-tagline">Provider Match</span>
-                    </span>
-                </a>
+            <span class="logo-text">
+                <span class="logo-name" data-company-name>Pipe & Co</span>
+                <span class="logo-tagline">Provider Match</span>
+            </span>
+        </a>
 
-                <nav class="desktop-nav" aria-label="Main navigation">
-                    <ul class="nav-list">
-                        <li class="nav-item">
-                            <a class="nav-link" href="index.html">Home</a>
-                        </li>
+        <nav class="desktop-nav" aria-label="Main navigation">
+            <ul class="nav-list">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
 
-                        <li class="nav-item">
-                        <li class="nav-item">
-                            <a class="nav-link" href="services.html">Services</a>
-                        </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="services.html">Services</a>
+                </li>
 
-                            <div class="nav-dropdown" data-desktop-services></div>
-                        </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
 
-                        <li class="nav-item">
-                            <a class="nav-link" href="about.html">About</a>
-                        </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </nav>
 
-                        <li class="nav-item">
-                            <a class="nav-link" href="contact.html">Contact</a>
-                        </li>
-                    </ul>
-                </nav>
+        <div class="header-actions">
+            <a class="btn btn-outline header-phone" href="tel:+12125550188" data-phone-link="button">
+                Call Now
+                <i data-lucide="phone"></i>
+            </a>
 
-                <div class="header-actions">
-                    <a class="btn btn-outline header-phone" href="tel:+12125550188" data-phone-link="button">
-                        Call Now
-                        <i data-lucide="phone"></i>
-                    </a>
+            <a class="mobile-call" href="tel:+12125550188" data-phone-link aria-label="Call Pipe & Co">
+                <i data-lucide="phone"></i>
+            </a>
 
-                    <a class="mobile-call" href="tel:+12125550188" data-phone-link aria-label="Call Pipe & Co">
-                        <i data-lucide="phone"></i>
-                    </a>
-
-                    <button class="mobile-menu-toggle" type="button" aria-label="Open mobile menu" aria-expanded="false"
-                        data-mobile-menu-toggle>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </button>
-                </div>
-            </div>
-        </header>
-        <div class="service-ticker" aria-label="Popular plumbing service categories">
-            <div class="service-ticker-track" data-service-ticker></div>
+            <button class="mobile-menu-toggle" type="button" aria-label="Open mobile menu" aria-expanded="false"
+                data-mobile-menu-toggle>
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
         </div>
+    </div>
+</header>
+
+<!-- ================= SERVICE TICKER ================= -->
+<div class="service-ticker" aria-label="Popular plumbing service categories">
+    <div class="service-ticker-track" data-service-ticker></div>
+</div>
 
         <!-- ================= MOBILE MENU ================= -->
         <div class="mobile-menu" data-mobile-menu aria-hidden="true">
@@ -654,6 +652,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script src="js/services-data.js"></script>
 
     <script src="js/config.js"></script>
     <script src="js/main.js"></script>

@@ -447,11 +447,11 @@ p {
 .site-header {
     position: sticky;
     top: 0;
-    z-index: 900;
+    z-index: 1000;
     width: 100%;
     height: var(--header-height);
     border-bottom: 1px solid rgba(17, 20, 23, 0.08);
-    background: rgba(246, 247, 248, 0.82);
+    background: rgba(246, 247, 248, 0.88);
     backdrop-filter: blur(22px);
 }
 
@@ -1745,7 +1745,7 @@ p {
 .service-ticker {
     position: sticky;
     top: var(--header-height);
-    z-index: 840;
+    z-index: 990;
     width: 100%;
     border-bottom: 1px solid rgba(17, 20, 23, 0.08);
     background: rgba(255, 255, 255, 0.78);
@@ -1983,4 +1983,155 @@ p {
     .service-ticker-track {
         min-height: 40px;
     }
+}
+
+/* ================================
+   STICKY HEADER FIX
+================================ */
+
+.site-header {
+    position: sticky !important;
+    top: 0 !important;
+    z-index: 1000 !important;
+}
+
+.service-ticker {
+    position: sticky !important;
+    top: var(--header-height) !important;
+    z-index: 990 !important;
+}
+
+/* ================================
+   FIXED HEADER + FIXED SERVICE TICKER
+================================ */
+
+:root {
+    --ticker-height: 42px;
+}
+
+.site-header {
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    z-index: 1100 !important;
+    width: 100% !important;
+    height: var(--header-height) !important;
+}
+
+.service-ticker {
+    position: fixed !important;
+    top: var(--header-height) !important;
+    left: 0 !important;
+    right: 0 !important;
+    z-index: 1090 !important;
+    width: 100% !important;
+    height: var(--ticker-height) !important;
+}
+
+.service-ticker-track {
+    min-height: var(--ticker-height) !important;
+    height: var(--ticker-height) !important;
+    padding-top: 5px !important;
+    padding-bottom: 5px !important;
+}
+
+.service-ticker-link {
+    min-height: 30px !important;
+    font-size: 0.66rem !important;
+}
+
+.service-ticker-link span {
+    width: 24px !important;
+    height: 24px !important;
+}
+
+.service-ticker-link svg {
+    width: 14px !important;
+    height: 14px !important;
+}
+
+/* чтобы контент не залезал под fixed header + ticker */
+main {
+    padding-top: calc(var(--header-height) + var(--ticker-height)) !important;
+}
+
+/* чтобы мобильное меню открывалось под header и перекрывало ticker */
+.mobile-menu {
+    position: fixed !important;
+    inset: var(--header-height) 0 0 !important;
+    z-index: 1095 !important;
+}
+
+/* чтобы ничего не ломало fixed/sticky */
+.page-shell {
+    overflow: visible !important;
+}
+
+html,
+body {
+    overflow-x: hidden !important;
+}
+
+@media (max-width: 980px) {
+    :root {
+        --header-height: 76px;
+        --ticker-height: 40px;
+    }
+}
+
+@media (max-width: 720px) {
+    .service-ticker-track {
+        min-height: var(--ticker-height) !important;
+        height: var(--ticker-height) !important;
+    }
+
+    .service-ticker-link {
+        min-height: 28px !important;
+        font-size: 0.62rem !important;
+    }
+}
+
+/* ================================
+   INFINITE SERVICE TICKER FIX
+================================ */
+
+.service-ticker {
+    overflow: hidden !important;
+}
+
+.service-ticker-track {
+    display: flex !important;
+    align-items: center !important;
+    gap: 0 !important;
+    width: max-content !important;
+    min-width: max-content !important;
+    animation: serviceTickerMove 28s linear infinite !important;
+    will-change: transform;
+}
+
+.service-ticker-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-right: 10px;
+    flex: 0 0 auto;
+}
+
+.service-ticker-link {
+    flex: 0 0 auto;
+}
+
+@keyframes serviceTickerMove {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-25%);
+    }
+}
+
+.service-ticker:hover .service-ticker-track {
+    animation-play-state: paused !important;
 }

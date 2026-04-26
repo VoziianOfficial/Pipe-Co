@@ -20,7 +20,13 @@ document.addEventListener("DOMContentLoaded", () => {
 ================================ */
 
 function getConfig() {
-    return window.SITE_CONFIG || {};
+    const config = window.SITE_CONFIG || {};
+    const services = window.SERVICES_DATA || config.services || [];
+
+    return {
+        ...config,
+        services,
+    };
 }
 
 function initConfigInjection() {
@@ -139,16 +145,16 @@ function injectServiceLinks(config) {
         mobileContainer.innerHTML = config.services
             .map(
                 (service) => `
-          <a class="mobile-service-link" href="${service.href}">
-            <span class="mobile-service-icon">
-              <i data-lucide="${service.icon}"></i>
-            </span>
-            <span>
-              <strong>${service.title}</strong>
-              <span>${service.shortText}</span>
-            </span>
-          </a>
-        `
+                    <a class="mobile-service-link" href="${service.href}">
+                        <span class="mobile-service-icon">
+                            <i data-lucide="${service.icon}"></i>
+                        </span>
+                        <span>
+                            <strong>${service.title}</strong>
+                            <span>${service.shortText}</span>
+                        </span>
+                    </a>
+                `
             )
             .join("");
     }
@@ -157,31 +163,48 @@ function injectServiceLinks(config) {
         footerContainer.innerHTML = config.services
             .map(
                 (service) => `
-          <li>
-            <a href="${service.href}">${service.title}</a>
-          </li>
-        `
+                    <li>
+                        <a href="${service.href}">${service.title}</a>
+                    </li>
+                `
             )
             .join("");
     }
 
     if (tickerContainers.length) {
-        const tickerItems = [...config.services, ...config.services]
+        const serviceSet = config.services
             .map(
                 (service) => `
-          <a class="service-ticker-link" href="${service.href}">
-            <span>
-              <i data-lucide="${service.icon}"></i>
-            </span>
-            ${service.title}
-          </a>
-        `
+                    <a class="service-ticker-link" href="${service.href}">
+                        <span>
+                            <i data-lucide="${service.icon}"></i>
+                        </span>
+                        ${service.title}
+                    </a>
+                `
             )
             .join("");
 
         tickerContainers.forEach((container) => {
-            container.innerHTML = tickerItems;
+            container.innerHTML = `
+                <div class="service-ticker-group">
+                    ${serviceSet}
+                </div>
+                <div class="service-ticker-group" aria-hidden="true">
+                    ${serviceSet}
+                </div>
+                <div class="service-ticker-group" aria-hidden="true">
+                    ${serviceSet}
+                </div>
+                <div class="service-ticker-group" aria-hidden="true">
+                    ${serviceSet}
+                </div>
+            `;
         });
+    }
+
+    if (window.lucide && typeof window.lucide.createIcons === "function") {
+        window.lucide.createIcons();
     }
 }
 
