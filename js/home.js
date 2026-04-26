@@ -19,39 +19,76 @@ function initReviewsSlider() {
 
     if (!sliderElement || typeof Swiper === "undefined") return;
 
-    new Swiper(".reviews-slider", {
+    const currentEl = document.querySelector(".reviews-progress-current");
+    const totalEl = document.querySelector(".reviews-progress-total");
+
+    const formatNumber = (number) => String(number).padStart(2, "0");
+
+    const slider = new Swiper(sliderElement, {
         slidesPerView: 1,
-        spaceBetween: 16,
-        speed: 750,
+        spaceBetween: 14,
+        speed: 700,
         loop: true,
+        loopAdditionalSlides: 3,
         grabCursor: true,
-        autoplay: {
-            delay: 4200,
-            disableOnInteraction: false,
+        watchOverflow: true,
+        centeredSlides: false,
+        navigation: {
+            nextEl: ".reviews-nav-next",
+            prevEl: ".reviews-nav-prev",
         },
         pagination: {
             el: ".reviews-slider .swiper-pagination",
-            clickable: true,
+            type: "progressbar",
         },
         breakpoints: {
             640: {
-                slidesPerView: 1.08,
+                slidesPerView: 1.12,
                 spaceBetween: 16,
             },
             768: {
-                slidesPerView: 1.65,
+                slidesPerView: 2,
                 spaceBetween: 18,
             },
-            1100: {
-                slidesPerView: 2.35,
+            1180: {
+                slidesPerView: 3,
                 spaceBetween: 20,
             },
-            1320: {
-                slidesPerView: 3,
-                spaceBetween: 22,
+        },
+        on: {
+            init(swiper) {
+                updateReviewsCounter(swiper, currentEl, totalEl, formatNumber);
+            },
+            realIndexChange(swiper) {
+                updateReviewsCounter(swiper, currentEl, totalEl, formatNumber);
             },
         },
     });
+
+    updateReviewsCounter(slider, currentEl, totalEl, formatNumber);
+}
+
+function updateReviewsCounter(swiper, currentEl, totalEl, formatNumber) {
+    if (!currentEl || !totalEl) return;
+
+    const total = swiper.slides.filter(
+        (slide) => !slide.classList.contains("swiper-slide-duplicate")
+    ).length;
+
+    const current = swiper.realIndex + 1;
+
+    currentEl.textContent = formatNumber(current);
+    totalEl.textContent = formatNumber(total);
+}
+
+function updateReviewsCounter(swiper, currentEl, totalEl, formatNumber) {
+    if (!currentEl || !totalEl) return;
+
+    const total = swiper.slides.length;
+    const current = swiper.realIndex + 1;
+
+    currentEl.textContent = formatNumber(current);
+    totalEl.textContent = formatNumber(total);
 }
 
 /* ================================
