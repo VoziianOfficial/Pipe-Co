@@ -6,6 +6,7 @@
 
 document.addEventListener("DOMContentLoaded", () => {
     initAboutImageParallax();
+    initAboutCounters();
 });
 
 function initAboutImageParallax() {
@@ -41,4 +42,54 @@ function initAboutImageParallax() {
             ease: "power2.out",
         });
     });
+}
+
+function initAboutCounters() {
+    const counters = document.querySelectorAll("[data-counter]");
+
+    if (!counters.length) return;
+
+    const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+    const animateCounter = (counter) => {
+        const target = Number(counter.dataset.counter || 0);
+
+        if (reduceMotion) {
+            counter.textContent = target;
+            return;
+        }
+
+        const duration = 900;
+        const startTime = performance.now();
+
+        const update = (currentTime) => {
+            const progress = Math.min((currentTime - startTime) / duration, 1);
+            const easedProgress = 1 - Math.pow(1 - progress, 3);
+            const value = Math.round(target * easedProgress);
+
+            counter.textContent = value;
+
+            if (progress < 1) {
+                requestAnimationFrame(update);
+            }
+        };
+
+        requestAnimationFrame(update);
+    };
+
+    const observer = new IntersectionObserver(
+        (entries, currentObserver) => {
+            entries.forEach((entry) => {
+                if (!entry.isIntersecting) return;
+
+                animateCounter(entry.target);
+                currentObserver.unobserve(entry.target);
+            });
+        },
+        {
+            threshold: 0.35,
+        }
+    );
+
+    counters.forEach((counter) => observer.observe(counter));
 }
