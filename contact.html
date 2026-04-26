@@ -19,64 +19,64 @@
     <a class="skip-link" href="#main">Skip to main content</a>
 
     <div class="page-shell">
-<!-- ================= HEADER ================= -->
-<header class="site-header" aria-label="Site header">
-    <div class="container-wide header-inner">
-        <a class="logo" href="index.html" aria-label="Pipe & Co home">
-            <span class="logo-mark logo-mark-word" aria-hidden="true">
-                <span>P</span>
-            </span>
+        <!-- ================= HEADER ================= -->
+        <header class="site-header" aria-label="Site header">
+            <div class="container-wide header-inner">
+                <a class="logo" href="index.html" aria-label="Pipe & Co home">
+                    <span class="logo-mark logo-mark-word" aria-hidden="true">
+                        <span>P</span>
+                    </span>
 
-            <span class="logo-text">
-                <span class="logo-name" data-company-name>Pipe & Co</span>
-                <span class="logo-tagline">Provider Match</span>
-            </span>
-        </a>
+                    <span class="logo-text">
+                        <span class="logo-name" data-company-name>Pipe & Co</span>
+                        <span class="logo-tagline">Provider Match</span>
+                    </span>
+                </a>
 
-        <nav class="desktop-nav" aria-label="Main navigation">
-            <ul class="nav-list">
-                <li class="nav-item">
-                    <a class="nav-link" href="index.html">Home</a>
-                </li>
+                <nav class="desktop-nav" aria-label="Main navigation">
+                    <ul class="nav-list">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
 
-                <li class="nav-item">
-                    <a class="nav-link" href="services.html">Services</a>
-                </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="services.html">Services</a>
+                        </li>
 
-                <li class="nav-item">
-                    <a class="nav-link" href="about.html">About</a>
-                </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
 
-                <li class="nav-item">
-                    <a class="nav-link" href="contact.html">Contact</a>
-                </li>
-            </ul>
-        </nav>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
 
-        <div class="header-actions">
-            <a class="btn btn-outline header-phone" href="tel:+12125550188" data-phone-link="button">
-                Call Now
-                <i data-lucide="phone"></i>
-            </a>
+                <div class="header-actions">
+                    <a class="btn btn-outline header-phone" href="tel:+12125550188" data-phone-link="button">
+                        Call Now
+                        <i data-lucide="phone"></i>
+                    </a>
 
-            <a class="mobile-call" href="tel:+12125550188" data-phone-link aria-label="Call Pipe & Co">
-                <i data-lucide="phone"></i>
-            </a>
+                    <a class="mobile-call" href="tel:+12125550188" data-phone-link aria-label="Call Pipe & Co">
+                        <i data-lucide="phone"></i>
+                    </a>
 
-            <button class="mobile-menu-toggle" type="button" aria-label="Open mobile menu" aria-expanded="false"
-                data-mobile-menu-toggle>
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
+                    <button class="mobile-menu-toggle" type="button" aria-label="Open mobile menu" aria-expanded="false"
+                        data-mobile-menu-toggle>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </header>
+
+        <!-- ================= SERVICE TICKER ================= -->
+        <div class="service-ticker" aria-label="Popular plumbing service categories">
+            <div class="service-ticker-track" data-service-ticker></div>
         </div>
-    </div>
-</header>
-
-<!-- ================= SERVICE TICKER ================= -->
-<div class="service-ticker" aria-label="Popular plumbing service categories">
-    <div class="service-ticker-track" data-service-ticker></div>
-</div>
 
         <!-- ================= MOBILE MENU ================= -->
         <div class="mobile-menu" data-mobile-menu aria-hidden="true">
@@ -142,51 +142,72 @@
 
         <main id="main">
             <!-- ================= CONTACT HERO ================= -->
-            <section class="contact-hero">
+            <section class="contact-hero contact-hero--premium" id="contact-form">
                 <div class="container-wide contact-hero-grid">
                     <div class="contact-hero-copy" data-aos="fade-up">
-                        <span class="eyebrow">Start a plumbing provider request</span>
+                        <span class="eyebrow">Start a plumbing request</span>
 
                         <h1>
-                            Share the project details before comparing local providers.
+                            Tell us what you need. Compare provider options with a clearer starting point.
                         </h1>
 
                         <p class="text-lead">
-                            Pipe & Co helps homeowners organize plumbing requests and connect with independent
+                            Pipe & Co helps homeowners organize plumbing requests before speaking with independent local
                             providers.
-                            The platform does not perform plumbing work directly.
+                            Choose the category, add your location, and share the details that matter.
                         </p>
 
-                        <div class="contact-hero-actions">
-                            <a class="btn btn-primary" href="#request-form">
-                                Fill Request Form
-                                <i data-lucide="arrow-down"></i>
-                            </a>
+                        <div class="contact-hero-points">
+                            <span>
+                                <i data-lucide="check"></i>
+                                Free matching platform
+                            </span>
 
-                            <a class="btn btn-outline" href="tel:+12125550188" data-phone-link="button">
-                                Call Now
-                                <i data-lucide="phone"></i>
-                            </a>
+                            <span>
+                                <i data-lucide="check"></i>
+                                Independent providers
+                            </span>
+
+                            <span>
+                                <i data-lucide="check"></i>
+                                Quote-ready request flow
+                            </span>
                         </div>
                     </div>
 
-                    <div class="contact-hero-visual" data-aos="fade-left">
-                        <img src="assets/images/contact/contact-hero.jpg" alt="Modern plumbing request desk setup" />
+                    <div class="contact-hero-panel" data-aos="fade-left">
+                        <div class="contact-panel-top">
+                            <span>
+                                <i data-lucide="messages-square"></i>
+                            </span>
 
-                        <div class="contact-orbit-card contact-orbit-card--one">
-                            <i data-lucide="map-pin"></i>
-                            <span>ZIP code</span>
+                            <div>
+                                <small>Request overview</small>
+                                <strong>Start with the right plumbing category.</strong>
+                            </div>
                         </div>
 
-                        <div class="contact-orbit-card contact-orbit-card--two">
-                            <i data-lucide="wrench"></i>
-                            <span>Category</span>
+                        <div class="contact-panel-steps">
+                            <article>
+                                <span>01</span>
+                                <p>Choose your request type</p>
+                            </article>
+
+                            <article>
+                                <span>02</span>
+                                <p>Add ZIP code and project notes</p>
+                            </article>
+
+                            <article>
+                                <span>03</span>
+                                <p>Compare independent provider options</p>
+                            </article>
                         </div>
 
-                        <div class="contact-orbit-card contact-orbit-card--three">
-                            <i data-lucide="message-square-text"></i>
-                            <span>Project notes</span>
-                        </div>
+                        <a class="btn btn-primary btn-block" href="#contact-form">
+                            Continue to Request Form
+                            <i data-lucide="arrow-down"></i>
+                        </a>
                     </div>
                 </div>
             </section>
@@ -489,9 +510,9 @@
                 <div class="footer-inner">
                     <div class="footer-brand">
                         <a class="logo footer-logo" href="index.html" aria-label="Pipe & Co home">
-                        <span class="logo-mark logo-mark-word" aria-hidden="true">
-                            <span>P</span>
-                        </span>
+                            <span class="logo-mark logo-mark-word" aria-hidden="true">
+                                <span>P</span>
+                            </span>
 
                             <span class="logo-text">
                                 <span class="logo-name" data-company-name>Pipe & Co</span>
@@ -514,7 +535,7 @@
                                 <strong data-company-id>PCO-48291</strong>
                             </span>
                         </div>
-                        
+
                     </div>
 
                     <div class="footer-cols">
