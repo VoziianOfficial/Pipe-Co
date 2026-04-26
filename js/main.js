@@ -129,29 +129,11 @@ function injectFooterLinks(config) {
 }
 
 function injectServiceLinks(config) {
-    const desktopContainer = document.querySelector("[data-desktop-services]");
     const mobileContainer = document.querySelector("[data-mobile-services]");
     const footerContainer = document.querySelector("[data-footer-services]");
+    const tickerContainers = document.querySelectorAll("[data-service-ticker]");
 
     if (!Array.isArray(config.services)) return;
-
-    if (desktopContainer) {
-        desktopContainer.innerHTML = config.services
-            .map(
-                (service) => `
-          <a class="nav-dropdown-link" href="${service.href}">
-            <span class="nav-dropdown-icon">
-              <i data-lucide="${service.icon}"></i>
-            </span>
-            <span>
-              <span class="nav-dropdown-title">${service.title}</span>
-              <span class="nav-dropdown-text">${service.shortText}</span>
-            </span>
-          </a>
-        `
-            )
-            .join("");
-    }
 
     if (mobileContainer) {
         mobileContainer.innerHTML = config.services
@@ -181,6 +163,25 @@ function injectServiceLinks(config) {
         `
             )
             .join("");
+    }
+
+    if (tickerContainers.length) {
+        const tickerItems = [...config.services, ...config.services]
+            .map(
+                (service) => `
+          <a class="service-ticker-link" href="${service.href}">
+            <span>
+              <i data-lucide="${service.icon}"></i>
+            </span>
+            ${service.title}
+          </a>
+        `
+            )
+            .join("");
+
+        tickerContainers.forEach((container) => {
+            container.innerHTML = tickerItems;
+        });
     }
 }
 
