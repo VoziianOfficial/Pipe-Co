@@ -3562,3 +3562,34 @@ select:focus {
         display: none !important;
     }
 }
+
+/* ================================
+   FOOTER COLUMNS TITLE FIX
+================================ */
+
+.footer-cols {
+    gap: clamp(24px, 4vw, 42px) !important;
+}
+
+.footer-col h3 {
+    margin-bottom: 16px !important;
+    font-size: 0.68rem !important;
+    line-height: 1.45 !important;
+    letter-spacing: 0.2em !important;
+    word-spacing: 0.28em !important;
+    text-transform: uppercase !important;
+    white-space: normal !important;
+}
+
+@media (max-width: 720px) {
+    .footer-col h3 {
+        font-size: 0.66rem !important;
+        letter-spacing: 0.18em !important;
+        word-spacing: 0.22em !important;
+        margin-bottom: 12px !important;
+    }
+
+    .footer-cols {
+        gap: 22px !important;
+    }
+}
