@@ -12,9 +12,9 @@
 ================================ */
 
 :root {
-    --color-bg: #f6f7f8;
-    --color-bg-soft: #e5e7ea;
-    --color-card: #ffffff;
+    --color-bg: #EEF0F2;
+    --color-bg-soft: #E1E4E7;
+    --color-card: #FFFFFF;
 
     --color-dark: #111417;
     --color-dark-2: #33373d;
@@ -81,10 +81,10 @@ body {
     font-size: 16px;
     line-height: 1.6;
     color: var(--color-text);
-    background:
-        radial-gradient(circle at 8% 0%, rgba(46, 156, 139, 0.08), transparent 26%),
-        radial-gradient(circle at 92% 8%, rgba(17, 20, 23, 0.05), transparent 28%),
-        var(--color-bg);
+background:
+        radial-gradient(circle at 8% 0%, rgba(46, 156, 139, 0.05), transparent 26%),
+        radial-gradient(circle at 92% 8%, rgba(17, 20, 23, 0.045), transparent 28%),
+        linear-gradient(180deg, #F0F2F3 0%, #E7EAED 38%, #DDE2E6 100%);
     overflow-x: hidden;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
@@ -2469,4 +2469,24 @@ h3 {
     border-radius: 15px;
     border: 1px solid rgba(255, 255, 255, 0.12);
     pointer-events: none;
+}
+
+/* ================================
+   PLATINUM BACKGROUND POLISH
+================================ */
+
+.site-header {
+    background: rgba(231, 234, 237, 0.9) !important;
+}
+
+.service-ticker {
+    background: rgba(240, 242, 243, 0.78) !important;
+}
+
+.service-ticker::before {
+    background: linear-gradient(90deg, rgba(231, 234, 237, 0.98), transparent) !important;
+}
+
+.service-ticker::after {
+    background: linear-gradient(270deg, rgba(231, 234, 237, 0.98), transparent) !important;
 }
