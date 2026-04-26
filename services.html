@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Plumbing Service Categories — Pipe & Co</title>
+
+    <meta name="description"
+        content="Explore plumbing service categories with Pipe & Co and start a request to compare independent local plumbing providers." />
+
+    <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg" />
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+    <a class="skip-link" href="#main">Skip to main content</a>
+
+    <div class="page-shell">
+        <!-- ================= HEADER ================= -->
+        <header class="site-header" aria-label="Site header">
+            <div class="container-wide header-inner">
+                <a class="logo" href="index.html" aria-label="Pipe & Co home">
+                    <span class="logo-mark" aria-hidden="true">
+                        <i data-lucide="route"></i>
+                    </span>
+
+                    <span class="logo-text">
+                        <span class="logo-name" data-company-name>Pipe & Co</span>
+                        <span class="logo-tagline">Provider Match</span>
+                    </span>
+                </a>
+
+                <nav class="desktop-nav" aria-label="Main navigation">
+                    <ul class="nav-list">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <button class="nav-dropdown-toggle" type="button" aria-label="Open services menu">
+                                Services
+                                <i data-lucide="chevron-down"></i>
+                            </button>
+
+                            <div class="nav-dropdown" data-desktop-services></div>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <div class="header-actions">
+                    <a class="btn btn-outline header-phone" href="tel:+12125550188" data-phone-link="button">
+                        Call Now
+                        <i data-lucide="phone"></i>
+                    </a>
+
+                    <a class="mobile-call" href="tel:+12125550188" data-phone-link aria-label="Call Pipe & Co">
+                        <i data-lucide="phone"></i>
+                    </a>
+
+                    <button class="mobile-menu-toggle" type="button" aria-label="Open mobile menu" aria-expanded="false"
+                        data-mobile-menu-toggle>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </header>
+
+        <!-- ================= MOBILE MENU ================= -->
+        <div class="mobile-menu" data-mobile-menu aria-hidden="true">
+            <div class="mobile-menu-inner">
+                <div class="mobile-menu-panel">
+                    <div class="mobile-menu-top">
+                        <strong>Choose a plumbing request category.</strong>
+                        <p>
+                            Open the service list, compare categories, and move into a provider request.
+                        </p>
+                    </div>
+
+                    <nav class="mobile-nav" aria-label="Mobile navigation">
+                        <a class="mobile-nav-link" href="index.html">
+                            Home
+                            <i data-lucide="arrow-up-right"></i>
+                        </a>
+
+                        <button class="mobile-accordion-btn" type="button" data-mobile-services-toggle
+                            aria-expanded="false">
+                            Services
+                            <i data-lucide="chevron-down"></i>
+                        </button>
+
+                        <div class="mobile-services-list" data-mobile-services></div>
+
+                        <a class="mobile-nav-link" href="about.html">
+                            About
+                            <i data-lucide="arrow-up-right"></i>
+                        </a>
+
+                        <a class="mobile-nav-link" href="contact.html">
+                            Contact
+                            <i data-lucide="arrow-up-right"></i>
+                        </a>
+                    </nav>
+
+                    <div class="mobile-menu-contact">
+                        <a class="mobile-contact-row" href="tel:+12125550188" data-phone-link="text">
+                            <i data-lucide="phone"></i>
+                            <span data-company-phone>(212) 555-0188</span>
+                        </a>
+
+                        <a class="mobile-contact-row" href="mailto:hello@pipeandco.com" data-email-link="text">
+                            <i data-lucide="mail"></i>
+                            <span data-company-email>hello@pipeandco.com</span>
+                        </a>
+
+                        <span class="mobile-contact-row">
+                            <i data-lucide="map-pin"></i>
+                            <span data-company-address>USA Service Area</span>
+                        </span>
+                    </div>
+
+                    <div class="mobile-menu-legal">
+                        <a href="privacy-policy.html">Privacy</a>
+                        <a href="cookie-policy.html">Cookies</a>
+                        <a href="terms-of-service.html">Terms</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <main id="main">
+            <!-- ================= SERVICES HERO ================= -->
+            <section class="services-hero">
+                <div class="container-wide services-hero-grid">
+                    <div class="services-hero-copy" data-aos="fade-up">
+                        <span class="eyebrow">Plumbing request categories</span>
+
+                        <h1>
+                            One clean place to start the provider comparison.
+                        </h1>
+
+                        <p class="text-lead">
+                            Pipe & Co organizes common residential plumbing requests so homeowners can describe the
+                            need,
+                            compare local provider options, and move forward with more clarity.
+                        </p>
+
+                        <div class="hero-actions">
+                            <a class="btn btn-primary" href="contact.html">
+                                Start a Request
+                                <i data-lucide="arrow-up-right"></i>
+                            </a>
+
+                            <a class="btn btn-outline" href="#service-grid">
+                                Browse Categories
+                                <i data-lucide="layout-grid"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="services-hero-board" data-aos="fade-left">
+                        <div class="services-board-card services-board-card--main">
+                            <span>
+                                <i data-lucide="sliders-horizontal"></i>
+                            </span>
+
+                            <div>
+                                <small>Request routing</small>
+                                <strong>Category first, provider second.</strong>
+                                <p>
+                                    The platform helps structure the details before a homeowner compares independent
+                                    companies.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="services-board-mini services-board-mini--one">
+                            <i data-lucide="droplets"></i>
+                            <span>Leaks</span>
+                        </div>
+
+                        <div class="services-board-mini services-board-mini--two">
+                            <i data-lucide="shower-head"></i>
+                            <span>Fixtures</span>
+                        </div>
+
+                        <div class="services-board-mini services-board-mini--three">
+                            <i data-lucide="thermometer-sun"></i>
+                            <span>Water heater</span>
+                        </div>
+
+                        <div class="services-board-lines" aria-hidden="true">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ================= SERVICE GRID ================= -->
+            <section class="section services-grid-section" id="service-grid">
+                <div class="container">
+                    <div class="section-head">
+                        <div data-aos="fade-up">
+                            <span class="section-kicker">
+                                <i data-lucide="layers-3"></i>
+                                Compare by category
+                            </span>
+
+                            <h2>Pick the request type before choosing who to contact.</h2>
+                        </div>
+
+                        <p data-aos="fade-up" data-aos-delay="120">
+                            Each category page explains what homeowners can prepare, what may affect provider choice,
+                            and how to request quote options without confusing Pipe & Co for a direct contractor.
+                        </p>
+                    </div>
+
+                    <div class="services-page-grid">
+                        <a class="services-tile services-tile--large" href="drain-cleaning.html" data-aos="fade-up">
+                            <img src="assets/images/services/drain-cleaning.jpg"
+                                alt="Drain cleaning plumbing request" />
+                            <div class="services-tile-content">
+                                <span class="services-tile-icon">
+                                    <i data-lucide="waves"></i>
+                                </span>
+                                <h3>Drain Cleaning</h3>
+                                <p>
+                                    For slow drains, recurring clogs, backed-up fixtures, and request categories related
+                                    to water flow.
+                                </p>
+                                <span class="services-tile-link">
+                                    Open category
+                                    <i data-lucide="arrow-up-right"></i>
+                                </span>
+                            </div>
+                        </a>
+
+                        <a class="services-tile" href="water-heater.html" data-aos="fade-up" data-aos-delay="70">
+                            <img src="assets/images/services/water-heater.jpg" alt="Water heater request category" />
+                            <div class="services-tile-content">
+                                <span class="services-tile-icon">
+                                    <i data-lucide="thermometer-sun"></i>
+                                </span>
+                                <h3>Water Heater</h3>
+                                <p>
+                                    Compare provider options for repair, replacement, and installation request
+                                    conversations.
+                                </p>
+                                <span class="services-tile-link">
+                                    Open category
+                                    <i data-lucide="arrow-up-right"></i>
+                                </span>
+                            </div>
+                        </a>
+
+                        <a class="services-tile" href="leak-detection.html" data-aos="fade-up" data-aos-delay="140">
+                            <img src="assets/images/services/leak-detection.jpg"
+                                alt="Leak detection request category" />
+                            <div class="services-tile-content">
+                                <span class="services-tile-icon">
+                                    <i data-lucide="droplets"></i>
+                                </span>
+                                <h3>Leak Detection</h3>
+                                <p>
+                                    Start with visible signs, moisture areas, timing, and where the concern appears.
+                                </p>
+                                <span class="services-tile-link">
+                                    Open category
+                                    <i data-lucide="arrow-up-right"></i>
+                                </span>
+                            </div>
+                        </a>
+
+                        <a class="services-tile" href="bathroom-plumbing.html" data-aos="fade-up">
+                            <img src="assets/images/services/bathroom-plumbing.jpg"
+                                alt="Bathroom plumbing request category" />
+                            <div class="services-tile-content">
+                                <span class="services-tile-icon">
+                                    <i data-lucide="shower-head"></i>
+                                </span>
+                                <h3>Bathroom Plumbing</h3>
+                                <p>
+                                    Organize fixture, sink, toilet, shower, and bathroom plumbing update requests.
+                                </p>
+                                <span class="services-tile-link">
+                                    Open category
+                                    <i data-lucide="arrow-up-right"></i>
+                                </span>
+                            </div>
+                        </a>
+
+                        <a class="services-tile" href="emergency-plumbing.html" data-aos="fade-up" data-aos-delay="70">
+                            <img src="assets/images/services/emergency-plumbing.jpg"
+                                alt="Emergency plumbing request category" />
+                            <div class="services-tile-content">
+                                <span class="services-tile-icon">
+                                    <i data-lucide="siren"></i>
+                                </span>
+                                <h3>Emergency Plumbing</h3>
+                                <p>
+                                    For urgent request categories where timing, location, and availability matter most.
+                                </p>
+                                <span class="services-tile-link">
+                                    Open category
+                                    <i data-lucide="arrow-up-right"></i>
+                                </span>
+                            </div>
+                        </a>
+
+                        <a class="services-tile services-tile--wide" href="pipe-repair.html" data-aos="fade-up"
+                            data-aos-delay="140">
+                            <img src="assets/images/services/pipe-repair.jpg" alt="Pipe repair request category" />
+                            <div class="services-tile-content">
+                                <span class="services-tile-icon">
+                                    <i data-lucide="pipette"></i>
+                                </span>
+                                <h3>Pipe Repair</h3>
+                                <p>
+                                    For damaged lines, aging pipes, corrosion concerns, and residential pipe repair
+                                    request categories.
+                                </p>
+                                <span class="services-tile-link">
+                                    Open category
+                                    <i data-lucide="arrow-up-right"></i>
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ================= COMPARE SECTION ================= -->
+            <section class="section services-compare-section">
+                <div class="container-wide">
+                    <div class="services-compare-panel">
+                        <div class="services-compare-copy" data-aos="fade-right">
+                            <span class="section-kicker">
+                                <i data-lucide="git-compare-arrows"></i>
+                                Comparison logic
+                            </span>
+
+                            <h2>Good provider comparison starts before the first call.</h2>
+
+                            <p>
+                                A clear request makes it easier to discuss availability, possible quote terms, service
+                                area,
+                                timing, and project scope. Pipe & Co helps organize that starting point.
+                            </p>
+
+                            <a class="btn btn-primary" href="contact.html">
+                                Request Provider Options
+                                <i data-lucide="arrow-up-right"></i>
+                            </a>
+                        </div>
+
+                        <div class="compare-stack" data-aos="fade-left">
+                            <article class="compare-card">
+                                <span>01</span>
+                                <div>
+                                    <h3>Define the issue</h3>
+                                    <p>
+                                        Category, urgency, fixture or pipe location, visible signs, and access details.
+                                    </p>
+                                </div>
+                            </article>
+
+                            <article class="compare-card">
+                                <span>02</span>
+                                <div>
+                                    <h3>Confirm provider fit</h3>
+                                    <p>
+                                        Ask about service area, scheduling, experience with the request type, and quote
+                                        policies.
+                                    </p>
+                                </div>
+                            </article>
+
+                            <article class="compare-card">
+                                <span>03</span>
+                                <div>
+                                    <h3>Verify before hiring</h3>
+                                    <p>
+                                        Homeowners should verify license, insurance, project terms, and final pricing
+                                        directly.
+                                    </p>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ================= PROCESS SECTION ================= -->
+            <section class="section services-process-section">
+                <div class="container">
+                    <div class="section-head">
+                        <div data-aos="fade-up">
+                            <span class="section-kicker">
+                                <i data-lucide="workflow"></i>
+                                How it works
+                            </span>
+
+                            <h2>A compact route from request to provider conversation.</h2>
+                        </div>
+
+                        <p data-aos="fade-up" data-aos-delay="120">
+                            The goal is not to make homeowners read a long guide. The goal is to help them start with
+                            the
+                            right category and enough detail for provider conversations.
+                        </p>
+                    </div>
+
+                    <div class="process-rail">
+                        <article class="process-node" data-aos="fade-up">
+                            <span class="process-number">01</span>
+                            <div class="process-icon">
+                                <i data-lucide="mouse-pointer-click"></i>
+                            </div>
+                            <h3>Select a category</h3>
+                            <p>
+                                Choose the plumbing request that best matches the issue or update.
+                            </p>
+                        </article>
+
+                        <article class="process-node" data-aos="fade-up" data-aos-delay="80">
+                            <span class="process-number">02</span>
+                            <div class="process-icon">
+                                <i data-lucide="map-pinned"></i>
+                            </div>
+                            <h3>Add location details</h3>
+                            <p>
+                                ZIP code helps structure the provider availability conversation.
+                            </p>
+                        </article>
+
+                        <article class="process-node" data-aos="fade-up" data-aos-delay="160">
+                            <span class="process-number">03</span>
+                            <div class="process-icon">
+                                <i data-lucide="file-pen-line"></i>
+                            </div>
+                            <h3>Share project notes</h3>
+                            <p>
+                                Add symptoms, timing, access, and what you want to compare.
+                            </p>
+                        </article>
+
+                        <article class="process-node" data-aos="fade-up" data-aos-delay="240">
+                            <span class="process-number">04</span>
+                            <div class="process-icon">
+                                <i data-lucide="message-square-more"></i>
+                            </div>
+                            <h3>Review provider options</h3>
+                            <p>
+                                Compare independent providers before deciding who to hire.
+                            </p>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ================= FAQ ================= -->
+            <section class="section faq-section">
+                <div class="container">
+                    <div class="section-head">
+                        <div data-aos="fade-up">
+                            <span class="section-kicker">
+                                <i data-lucide="circle-help"></i>
+                                FAQ
+                            </span>
+                            <h2>Questions about comparing plumbing categories.</h2>
+                        </div>
+
+                        <p data-aos="fade-up" data-aos-delay="120">
+                            These answers explain how to use the service pages without treating Pipe & Co as a direct
+                            contractor.
+                        </p>
+                    </div>
+
+                    <div class="faq-list" data-aos="fade-up">
+                        <article class="faq-item">
+                            <button class="faq-question" type="button">
+                                Which plumbing category should I choose?
+                                <i data-lucide="plus"></i>
+                            </button>
+
+                            <div class="faq-answer">
+                                <div class="faq-answer-inner">
+                                    <p>
+                                        Choose the category that best matches the visible issue or planned request. If
+                                        the
+                                        issue is unclear, select the closest category and describe the symptoms in the
+                                        notes.
+                                    </p>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="faq-item">
+                            <button class="faq-question" type="button">
+                                Does Pipe & Co send its own plumbers?
+                                <i data-lucide="plus"></i>
+                            </button>
+
+                            <div class="faq-answer">
+                                <div class="faq-answer-inner">
+                                    <p>
+                                        No. Pipe & Co is a free platform that helps homeowners connect with independent
+                                        local providers. It does not perform plumbing work directly.
+                                    </p>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="faq-item">
+                            <button class="faq-question" type="button">
+                                What should I ask before choosing a plumbing provider?
+                                <i data-lucide="plus"></i>
+                            </button>
+
+                            <div class="faq-answer">
+                                <div class="faq-answer-inner">
+                                    <p>
+                                        Ask about licensing, insurance, service area, quote terms, scheduling, project
+                                        scope,
+                                        warranty information, and whether additional fees may apply.
+                                    </p>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="faq-item">
+                            <button class="faq-question" type="button">
+                                Can I request quotes for multiple categories?
+                                <i data-lucide="plus"></i>
+                            </button>
+
+                            <div class="faq-answer">
+                                <div class="faq-answer-inner">
+                                    <p>
+                                        Yes. If your request involves more than one concern, describe the full situation
+                                        in
+                                        the project notes so providers can better understand the scope.
+                                    </p>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- ================= FOOTER ================= -->
+        <footer class="site-footer">
+            <div class="container">
+                <div class="footer-inner">
+                    <div class="footer-brand">
+                        <a class="logo footer-logo" href="index.html" aria-label="Pipe & Co home">
+                            <span class="logo-mark" aria-hidden="true">
+                                <i data-lucide="route"></i>
+                            </span>
+
+                            <span class="logo-text">
+                                <span class="logo-name" data-company-name>Pipe & Co</span>
+                                <span class="logo-tagline">Provider Match</span>
+                            </span>
+                        </a>
+
+                        <p class="footer-text" data-footer-text>
+                            Pipe & Co helps homeowners compare local plumbing providers through a simple request-based
+                            experience.
+                        </p>
+
+                        <div class="footer-meta">
+                            <span>
+                                <strong data-company-name>Pipe & Co</strong>
+                                · <span data-company-address>USA Service Area</span>
+                            </span>
+                            <span>
+                                Company ID:
+                                <strong data-company-id>PCO-48291</strong>
+                            </span>
+                        </div>
+
+                        <div class="footer-socials" data-footer-socials></div>
+                    </div>
+
+                    <div class="footer-cols">
+                        <div class="footer-col">
+                            <h3>Navigation</h3>
+                            <ul class="footer-links" data-footer-nav></ul>
+                        </div>
+
+                        <div class="footer-col">
+                            <h3>Services</h3>
+                            <ul class="footer-links" data-footer-services></ul>
+                        </div>
+
+                        <div class="footer-col">
+                            <h3>Contact</h3>
+                            <div class="footer-contact-list">
+                                <a href="tel:+12125550188" data-phone-link="text">
+                                    <i data-lucide="phone"></i>
+                                    <span data-company-phone>(212) 555-0188</span>
+                                </a>
+
+                                <a href="mailto:hello@pipeandco.com" data-email-link="text">
+                                    <i data-lucide="mail"></i>
+                                    <span data-company-email>hello@pipeandco.com</span>
+                                </a>
+
+                                <span>
+                                    <i data-lucide="map-pin"></i>
+                                    <span data-service-area>United States</span>
+                                </span>
+                            </div>
+
+                            <h3 class="footer-legal-title">Legal</h3>
+                            <ul class="footer-links" data-footer-legal></ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer-disclaimer" data-disclaimer>
+                    Disclaimer: This site is a free service to assist homeowners in connecting with local service
+                    providers. All contractors/providers are independent and this site does not warrant or guarantee any
+                    work performed. It is the responsibility of the homeowner to verify that the hired contractor
+                    furnishes the necessary license and insurance required for the work being performed. All persons
+                    depicted in a photo or video are actors or models and not contractors listed on this site.
+                </div>
+
+                <div class="footer-bottom">
+                    <span>
+                        © <span data-current-year></span>
+                        <span data-company-name>Pipe & Co</span>. All rights reserved.
+                    </span>
+
+                    <span>Independent provider matching platform.</span>
+                </div>
+            </div>
+        </footer>
+
+        <!-- ================= COOKIE BANNER ================= -->
+        <div class="cookie-banner" data-cookie-banner aria-hidden="true">
+            <div class="cookie-inner">
+                <div class="cookie-content">
+                    <strong>Cookie & privacy preferences</strong>
+                    <p>
+                        Pipe & Co uses basic site preferences to improve browsing. Review the policy pages or choose
+                        whether to accept optional cookies.
+                    </p>
+
+                    <div class="cookie-links">
+                        <a href="privacy-policy.html">Privacy Policy</a>
+                        <a href="cookie-policy.html">Cookie Policy</a>
+                        <a href="terms-of-service.html">Terms of Service</a>
+                    </div>
+                </div>
+
+                <div class="cookie-actions">
+                    <button class="btn btn-outline" type="button" data-cookie-decline>
+                        Decline
+                    </button>
+
+                    <button class="btn btn-primary" type="button" data-cookie-accept>
+                        Accept
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ================= FAQ JSON-LD ================= -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+                {
+                    "@type": "Question",
+                    "name": "Which plumbing category should I choose?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Choose the category that best matches the visible issue or planned request. If the issue is unclear, select the closest category and describe the symptoms in the notes."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Does Pipe & Co send its own plumbers?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "No. Pipe & Co is a free platform that helps homeowners connect with independent local providers. It does not perform plumbing work directly."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "What should I ask before choosing a plumbing provider?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Ask about licensing, insurance, service area, quote terms, scheduling, project scope, warranty information, and whether additional fees may apply."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Can I request quotes for multiple categories?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Yes. If your request involves more than one concern, describe the full situation in the project notes so providers can better understand the scope."
+                    }
+                }
+            ]
+        }
+    </script>
+
+    <!-- ================= LIBRARIES ================= -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script src="js/config.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/services.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Leak Detection Provider Requests — Pipe & Co</title>
+
+    <meta name="description"
+        content="Compare local provider options for leak detection requests through Pipe & Co, an independent plumbing matching platform." />
+
+    <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+    <a class="skip-link" href="#main">Skip to main content</a>
+
+    <div class="page-shell">
+        <!-- HEADER -->
+        <header class="site-header" aria-label="Site header">
+            <div class="container-wide header-inner">
+                <a class="logo" href="index.html" aria-label="Pipe & Co home">
+                    <span class="logo-mark" aria-hidden="true">
+                        <i data-lucide="route"></i>
+                    </span>
+
+                    <span class="logo-text">
+                        <span class="logo-name" data-company-name>Pipe & Co</span>
+                        <span class="logo-tagline">Provider Match</span>
+                    </span>
+                </a>
+
+                <nav class="desktop-nav" aria-label="Main navigation">
+                    <ul class="nav-list">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <button class="nav-dropdown-toggle" type="button" aria-label="Open services menu">
+                                Services
+                                <i data-lucide="chevron-down"></i>
+                            </button>
+
+                            <div class="nav-dropdown" data-desktop-services></div>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <div class="header-actions">
+                    <a class="btn btn-outline header-phone" href="tel:+12125550188" data-phone-link="button">
+                        Call Now
+                        <i data-lucide="phone"></i>
+                    </a>
+
+                    <a class="mobile-call" href="tel:+12125550188" data-phone-link aria-label="Call Pipe & Co">
+                        <i data-lucide="phone"></i>
+                    </a>
+
+                    <button class="mobile-menu-toggle" type="button" aria-label="Open mobile menu" aria-expanded="false"
+                        data-mobile-menu-toggle>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </header>
+
+        <!-- MOBILE MENU -->
+        <div class="mobile-menu" data-mobile-menu aria-hidden="true">
+            <div class="mobile-menu-inner">
+                <div class="mobile-menu-panel">
+                    <div class="mobile-menu-top">
+                        <strong>Compare leak detection providers.</strong>
+                        <p>
+                            Open service categories, add project notes, and start a provider comparison flow.
+                        </p>
+                    </div>
+
+                    <nav class="mobile-nav" aria-label="Mobile navigation">
+                        <a class="mobile-nav-link" href="index.html">
+                            Home
+                            <i data-lucide="arrow-up-right"></i>
+                        </a>
+
+                        <button class="mobile-accordion-btn" type="button" data-mobile-services-toggle
+                            aria-expanded="false">
+                            Services
+                            <i data-lucide="chevron-down"></i>
+                        </button>
+
+                        <div class="mobile-services-list" data-mobile-services></div>
+
+                        <a class="mobile-nav-link" href="about.html">
+                            About
+                            <i data-lucide="arrow-up-right"></i>
+                        </a>
+
+                        <a class="mobile-nav-link" href="contact.html">
+                            Contact
+                            <i data-lucide="arrow-up-right"></i>
+                        </a>
+                    </nav>
+
+                    <div class="mobile-menu-contact">
+                        <a class="mobile-contact-row" href="tel:+12125550188" data-phone-link="text">
+                            <i data-lucide="phone"></i>
+                            <span data-company-phone>(212) 555-0188</span>
+                        </a>
+
+                        <a class="mobile-contact-row" href="mailto:hello@pipeandco.com" data-email-link="text">
+                            <i data-lucide="mail"></i>
+                            <span data-company-email>hello@pipeandco.com</span>
+                        </a>
+
+                        <span class="mobile-contact-row">
+                            <i data-lucide="map-pin"></i>
+                            <span data-company-address>USA Service Area</span>
+                        </span>
+                    </div>
+
+                    <div class="mobile-menu-legal">
+                        <a href="privacy-policy.html">Privacy</a>
+                        <a href="cookie-policy.html">Cookies</a>
+                        <a href="terms-of-service.html">Terms</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <main id="main">
+            <!-- HERO -->
+            <section class="service-hero">
+                <div class="container-wide service-hero-grid">
+                    <div class="service-hero-copy" data-aos="fade-up">
+                        <span class="eyebrow">Leak detection requests</span>
+
+                        <h1>Compare providers for visible, hidden, and suspected plumbing leaks.</h1>
+
+                        <p class="text-lead">
+                            Pipe & Co helps homeowners organize leak-related details before comparing independent local
+                            provider options for evaluation and quote conversations.
+                        </p>
+
+                        <div class="service-hero-actions">
+                            <a class="btn btn-primary" href="contact.html">
+                                Request Provider Options
+                                <i data-lucide="arrow-up-right"></i>
+                            </a>
+
+                            <a class="btn btn-outline" href="services.html">
+                                View All Categories
+                                <i data-lucide="layers-3"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="service-hero-visual" data-aos="fade-left">
+                        <img src="assets/images/services/leak-detection.jpg" alt="Leak detection plumbing category" />
+
+                        <div class="service-floating-note">
+                            <span>
+                                <i data-lucide="droplets"></i>
+                            </span>
+                            <div>
+                                <strong>Symptom-based request</strong>
+                                <p>Describe stains, moisture, sounds, meter changes, odors, or visible water.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- OVERVIEW -->
+            <section class="section service-overview">
+                <div class="container">
+                    <div class="service-overview-grid">
+                        <div class="service-overview-copy" data-aos="fade-up">
+                            <span class="section-kicker">
+                                <i data-lucide="file-search"></i>
+                                Service overview
+                            </span>
+
+                            <h2>Leak detection requests often start with small signs.</h2>
+
+                            <p>
+                                A leak request may begin with damp drywall, flooring changes, lower water pressure,
+                                water meter movement, dripping sounds, ceiling spots, cabinet moisture, or higher
+                                utility bills.
+                            </p>
+
+                            <p>
+                                Pipe & Co does not inspect or detect leaks directly. The platform helps organize the
+                                request
+                                and connect homeowners with independent providers who may evaluate the issue.
+                            </p>
+                        </div>
+
+                        <div class="service-overview-cards">
+                            <article class="service-detail-card" data-aos="fade-up">
+                                <span>
+                                    <i data-lucide="scan-search"></i>
+                                </span>
+                                <div>
+                                    <h3>Visible signs</h3>
+                                    <p>
+                                        Include stains, wet areas, mold concerns, warped flooring, cabinet moisture, or
+                                        dripping sounds.
+                                    </p>
+                                </div>
+                            </article>
+
+                            <article class="service-detail-card" data-aos="fade-up" data-aos-delay="80">
+                                <span>
+                                    <i data-lucide="map-pin"></i>
+                                </span>
+                                <div>
+                                    <h3>Location matters</h3>
+                                    <p>
+                                        Tell providers whether signs appear near walls, ceilings, bathrooms, kitchens,
+                                        slabs, or outdoor lines.
+                                    </p>
+                                </div>
+                            </article>
+
+                            <article class="service-detail-card" data-aos="fade-up" data-aos-delay="160">
+                                <span>
+                                    <i data-lucide="activity"></i>
+                                </span>
+                                <div>
+                                    <h3>Pattern details</h3>
+                                    <p>
+                                        Mention whether the issue is constant, after water use, after rain, or only at
+                                        certain times.
+                                    </p>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- FACTORS -->
+            <section class="section service-factors">
+                <div class="container-wide">
+                    <div class="factor-panel">
+                        <div class="factor-head">
+                            <div data-aos="fade-up">
+                                <span class="section-kicker">
+                                    <i data-lucide="sliders-horizontal"></i>
+                                    Provider comparison
+                                </span>
+                                <h2>Questions to compare before choosing a leak-related provider.</h2>
+                            </div>
+
+                            <p data-aos="fade-up" data-aos-delay="120">
+                                Leak requests can vary widely, so homeowners should confirm scope, diagnostic process,
+                                fees, and provider credentials directly.
+                            </p>
+                        </div>
+
+                        <div class="factor-grid">
+                            <article class="factor-card" data-aos="fade-up">
+                                <span>
+                                    <i data-lucide="radar"></i>
+                                </span>
+                                <h3>Detection approach</h3>
+                                <p>Ask what evaluation methods may be used and what is included.</p>
+                            </article>
+
+                            <article class="factor-card" data-aos="fade-up" data-aos-delay="80">
+                                <span>
+                                    <i data-lucide="badge-dollar-sign"></i>
+                                </span>
+                                <h3>Diagnostic fees</h3>
+                                <p>Confirm whether inspection, detection, or trip charges apply.</p>
+                            </article>
+
+                            <article class="factor-card" data-aos="fade-up" data-aos-delay="160">
+                                <span>
+                                    <i data-lucide="clock"></i>
+                                </span>
+                                <h3>Timing</h3>
+                                <p>Ask how soon the provider can evaluate active or suspected leaks.</p>
+                            </article>
+
+                            <article class="factor-card" data-aos="fade-up" data-aos-delay="240">
+                                <span>
+                                    <i data-lucide="shield-check"></i>
+                                </span>
+                                <h3>Verification</h3>
+                                <p>Verify licensing, insurance, and qualifications before authorizing work.</p>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- CTA -->
+            <section class="section service-cta">
+                <div class="container">
+                    <div class="service-cta-panel dark-panel" data-aos="fade-up">
+                        <div class="service-cta-copy">
+                            <span class="section-kicker">
+                                <i data-lucide="send"></i>
+                                Start leak request
+                            </span>
+
+                            <h2>Ready to compare leak detection provider options?</h2>
+
+                            <p>
+                                Add your ZIP code, describe the signs you see, and start a provider comparison flow.
+                            </p>
+                        </div>
+
+                        <div class="service-cta-actions">
+                            <a class="btn btn-primary" href="contact.html">
+                                Start Request
+                                <i data-lucide="arrow-up-right"></i>
+                            </a>
+
+                            <a class="btn btn-outline" href="tel:+12125550188" data-phone-link="button">
+                                Call Now
+                                <i data-lucide="phone"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- FAQ -->
+            <section class="section faq-section">
+                <div class="container">
+                    <div class="section-head">
+                        <div data-aos="fade-up">
+                            <span class="section-kicker">
+                                <i data-lucide="circle-help"></i>
+                                Leak detection FAQ
+                            </span>
+                            <h2>Before comparing leak detection providers.</h2>
+                        </div>
+
+                        <p data-aos="fade-up" data-aos-delay="120">
+                            Prepare useful context so provider conversations can be more specific.
+                        </p>
+                    </div>
+
+                    <div class="faq-list" data-aos="fade-up">
+                        <article class="faq-item">
+                            <button class="faq-question" type="button">
+                                What details should I include in a leak request?
+                                <i data-lucide="plus"></i>
+                            </button>
+                            <div class="faq-answer">
+                                <div class="faq-answer-inner">
+                                    <p>
+                                        Include where you see moisture, how long it has been happening, whether water
+                                        use affects it,
+                                        and whether there are stains, sounds, odors, or pressure changes.
+                                    </p>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="faq-item">
+                            <button class="faq-question" type="button">
+                                Does Pipe & Co detect leaks directly?
+                                <i data-lucide="plus"></i>
+                            </button>
+                            <div class="faq-answer">
+                                <div class="faq-answer-inner">
+                                    <p>
+                                        No. Pipe & Co is a matching platform that helps homeowners connect with
+                                        independent local providers.
+                                    </p>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="faq-item">
+                            <button class="faq-question" type="button">
+                                Can leak detection have diagnostic fees?
+                                <i data-lucide="plus"></i>
+                            </button>
+                            <div class="faq-answer">
+                                <div class="faq-answer-inner">
+                                    <p>
+                                        Yes, some providers may charge inspection or detection fees. Confirm all quote
+                                        and diagnostic terms directly.
+                                    </p>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="faq-item">
+                            <button class="faq-question" type="button">
+                                What should I verify before hiring?
+                                <i data-lucide="plus"></i>
+                            </button>
+                            <div class="faq-answer">
+                                <div class="faq-answer-inner">
+                                    <p>
+                                        Verify license, insurance, service area, diagnostic scope, pricing, and any
+                                        repair terms before hiring.
+                                    </p>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- FOOTER -->
+        <footer class="site-footer">
+            <div class="container">
+                <div class="footer-inner">
+                    <div class="footer-brand">
+                        <a class="logo footer-logo" href="index.html" aria-label="Pipe & Co home">
+                            <span class="logo-mark" aria-hidden="true">
+                                <i data-lucide="route"></i>
+                            </span>
+
+                            <span class="logo-text">
+                                <span class="logo-name" data-company-name>Pipe & Co</span>
+                                <span class="logo-tagline">Provider Match</span>
+                            </span>
+                        </a>
+
+                        <p class="footer-text" data-footer-text>
+                            Pipe & Co helps homeowners compare local plumbing providers through a simple request-based
+                            experience.
+                        </p>
+
+                        <div class="footer-meta">
+                            <span>
+                                <strong data-company-name>Pipe & Co</strong>
+                                · <span data-company-address>USA Service Area</span>
+                            </span>
+                            <span>
+                                Company ID:
+                                <strong data-company-id>PCO-48291</strong>
+                            </span>
+                        </div>
+
+                        <div class="footer-socials" data-footer-socials></div>
+                    </div>
+
+                    <div class="footer-cols">
+                        <div class="footer-col">
+                            <h3>Navigation</h3>
+                            <ul class="footer-links" data-footer-nav></ul>
+                        </div>
+
+                        <div class="footer-col">
+                            <h3>Services</h3>
+                            <ul class="footer-links" data-footer-services></ul>
+                        </div>
+
+                        <div class="footer-col">
+                            <h3>Contact</h3>
+                            <div class="footer-contact-list">
+                                <a href="tel:+12125550188" data-phone-link="text">
+                                    <i data-lucide="phone"></i>
+                                    <span data-company-phone>(212) 555-0188</span>
+                                </a>
+
+                                <a href="mailto:hello@pipeandco.com" data-email-link="text">
+                                    <i data-lucide="mail"></i>
+                                    <span data-company-email>hello@pipeandco.com</span>
+                                </a>
+
+                                <span>
+                                    <i data-lucide="map-pin"></i>
+                                    <span data-service-area>United States</span>
+                                </span>
+                            </div>
+
+                            <h3 class="footer-legal-title">Legal</h3>
+                            <ul class="footer-links" data-footer-legal></ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer-disclaimer" data-disclaimer>
+                    Disclaimer: This site is a free service to assist homeowners in connecting with local service
+                    providers. All contractors/providers are independent and this site does not warrant or guarantee any
+                    work performed. It is the responsibility of the homeowner to verify that the hired contractor
+                    furnishes the necessary license and insurance required for the work being performed. All persons
+                    depicted in a photo or video are actors or models and not contractors listed on this site.
+                </div>
+
+                <div class="footer-bottom">
+                    <span>
+                        © <span data-current-year></span>
+                        <span data-company-name>Pipe & Co</span>. All rights reserved.
+                    </span>
+
+                    <span>Independent provider matching platform.</span>
+                </div>
+            </div>
+        </footer>
+
+        <!-- COOKIE BANNER -->
+        <div class="cookie-banner" data-cookie-banner aria-hidden="true">
+            <div class="cookie-inner">
+                <div class="cookie-content">
+                    <strong>Cookie & privacy preferences</strong>
+                    <p>
+                        Pipe & Co uses basic site preferences to improve browsing. Review the policy pages or choose
+                        whether to accept optional cookies.
+                    </p>
+
+                    <div class="cookie-links">
+                        <a href="privacy-policy.html">Privacy Policy</a>
+                        <a href="cookie-policy.html">Cookie Policy</a>
+                        <a href="terms-of-service.html">Terms of Service</a>
+                    </div>
+                </div>
+
+                <div class="cookie-actions">
+                    <button class="btn btn-outline" type="button" data-cookie-decline>
+                        Decline
+                    </button>
+
+                    <button class="btn btn-primary" type="button" data-cookie-accept>
+                        Accept
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FAQ JSON-LD -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+                {
+                    "@type": "Question",
+                    "name": "What details should I include in a leak request?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Include where you see moisture, how long it has been happening, whether water use affects it, and whether there are stains, sounds, odors, or pressure changes."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Does Pipe & Co detect leaks directly?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "No. Pipe & Co is a matching platform that helps homeowners connect with independent local providers."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Can leak detection have diagnostic fees?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Yes, some providers may charge inspection or detection fees. Confirm all quote and diagnostic terms directly."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "What should I verify before hiring?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Verify license, insurance, service area, diagnostic scope, pricing, and any repair terms before hiring."
+                    }
+                }
+            ]
+        }
+    </script>
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script src="js/config.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/service-page.js"></script>
+</body>
+
+</html>
