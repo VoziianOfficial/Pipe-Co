@@ -452,3 +452,503 @@
         min-height: auto;
     }
 }
+
+/* =========================================
+   SERVICE PAGE — HERO PIPE LINE
+========================================= */
+
+.service-hero {
+    position: relative;
+    overflow: hidden;
+    isolation: isolate;
+}
+
+.service-hero-pipe-bg {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    pointer-events: none;
+    opacity: 0.82;
+}
+
+.service-hero-pipe-bg svg {
+    width: 100%;
+    height: 100%;
+}
+
+.service-pipe-base,
+.service-pipe-flow {
+    fill: none;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+.service-pipe-base {
+    stroke: rgba(17, 20, 23, 0.12);
+    stroke-width: 18;
+    filter: drop-shadow(0 10px 18px rgba(17, 20, 23, 0.06));
+}
+
+.service-pipe-flow {
+    stroke: rgba(46, 156, 139, 0.62);
+    stroke-width: 4;
+    stroke-dasharray: 34 24;
+    filter: drop-shadow(0 0 10px rgba(46, 156, 139, 0.28));
+    animation: servicePipeFlow 2.8s linear infinite;
+}
+
+.service-pipe-node {
+    fill: var(--color-bg, #f7f7f5);
+    stroke: rgba(46, 156, 139, 0.65);
+    stroke-width: 4;
+    filter: drop-shadow(0 0 8px rgba(46, 156, 139, 0.24));
+    animation: servicePipePulse 2.6s ease-in-out infinite;
+}
+
+.service-pipe-node--two {
+    animation-delay: 0.35s;
+}
+
+.service-pipe-node--three {
+    animation-delay: 0.7s;
+}
+
+.service-hero-grid,
+.service-hero-copy,
+.service-hero-side {
+    position: relative;
+    z-index: 2;
+}
+
+.service-hero-copy {
+    position: relative;
+}
+
+.service-hero-copy::before {
+    content: "";
+    position: absolute;
+    inset: -22px -24px;
+    z-index: -1;
+    border-radius: 34px;
+    background: linear-gradient(90deg,
+            rgba(255, 255, 255, 0.84),
+            rgba(255, 255, 255, 0.58),
+            transparent);
+    pointer-events: none;
+}
+
+.service-hero-side {
+    position: relative;
+    min-height: 420px;
+    border: 1px solid var(--color-border);
+    border-radius: 36px;
+    background:
+        linear-gradient(180deg, rgba(17, 20, 23, 0.16), rgba(17, 20, 23, 0.46)),
+        url("../assets/images/services/service-page-hero.jpg") center / cover no-repeat;
+    box-shadow: var(--shadow-card);
+    overflow: hidden;
+}
+
+.service-hero-side::before {
+    content: "";
+    position: absolute;
+    inset: 18px;
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    border-radius: 24px;
+    pointer-events: none;
+}
+
+.service-hero-side-card {
+    position: absolute;
+    left: 20px;
+    right: 20px;
+    bottom: 20px;
+    z-index: 2;
+    display: grid;
+    grid-template-columns: 54px 1fr;
+    gap: 14px;
+    padding: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.16);
+    border-radius: 24px;
+    background: rgba(255, 255, 255, 0.11);
+    backdrop-filter: blur(16px);
+}
+
+.service-hero-side-card>span {
+    display: grid;
+    place-items: center;
+    width: 54px;
+    height: 54px;
+    border-radius: 18px;
+    color: var(--color-white);
+    background: var(--color-accent);
+}
+
+.service-hero-side-card svg {
+    width: 24px;
+    height: 24px;
+}
+
+.service-hero-side-card strong {
+    display: block;
+    margin-bottom: 4px;
+    color: var(--color-white);
+    font-family: var(--font-heading);
+    font-size: 1.12rem;
+    line-height: 1.1;
+}
+
+.service-hero-side-card p {
+    color: rgba(255, 255, 255, 0.72);
+    font-size: 0.92rem;
+    line-height: 1.45;
+}
+
+@keyframes servicePipeFlow {
+    from {
+        stroke-dashoffset: 0;
+    }
+
+    to {
+        stroke-dashoffset: -58;
+    }
+}
+
+@keyframes servicePipePulse {
+
+    0%,
+    100% {
+        transform: scale(1);
+        opacity: 0.75;
+    }
+
+    50% {
+        transform: scale(1.22);
+        opacity: 1;
+    }
+}
+
+/* =========================================
+   REQUEST FLOW SECTION — PIPELINE
+========================================= */
+
+.request-flow-section {
+    overflow: hidden;
+}
+
+.request-flow-rail {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 16px;
+}
+
+.request-flow-rail::before {
+    content: "";
+    position: absolute;
+    left: 8%;
+    right: 8%;
+    top: 74px;
+    height: 8px;
+    border-radius: 999px;
+    background:
+        linear-gradient(90deg,
+            rgba(17, 20, 23, 0.10),
+            rgba(46, 156, 139, 0.30),
+            rgba(17, 20, 23, 0.10));
+    box-shadow:
+        inset 0 0 0 1px rgba(17, 20, 23, 0.06),
+        0 8px 18px rgba(17, 20, 23, 0.06);
+    pointer-events: none;
+}
+
+.request-flow-step {
+    position: relative;
+    min-height: 290px;
+    padding: 22px;
+    border: 1px solid var(--color-border);
+    border-radius: 30px;
+    background:
+        radial-gradient(circle at 14% 0%, rgba(46, 156, 139, 0.08), transparent 34%),
+        rgba(255, 255, 255, 0.78);
+    box-shadow: var(--shadow-soft);
+    overflow: hidden;
+}
+
+.request-flow-step::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 60px;
+    width: 12px;
+    height: 26px;
+    transform: translateX(-50%);
+    border-radius: 999px;
+    background:
+        linear-gradient(180deg,
+            rgba(46, 156, 139, 0.44),
+            rgba(17, 20, 23, 0.12));
+    pointer-events: none;
+}
+
+.request-flow-step::after {
+    content: "";
+    position: absolute;
+    right: -38px;
+    bottom: -38px;
+    width: 120px;
+    height: 120px;
+    border-radius: 999px;
+    border: 1px solid rgba(46, 156, 139, 0.14);
+    background: rgba(46, 156, 139, 0.05);
+}
+
+.request-flow-number {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 58px;
+    height: 58px;
+    margin-bottom: 24px;
+    border-radius: 20px;
+    font-family: var(--font-accent);
+    font-size: 0.82rem;
+    font-weight: 800;
+    letter-spacing: 0.12em;
+    color: var(--color-white);
+    background: var(--color-accent);
+    box-shadow: 0 16px 28px rgba(46, 156, 139, 0.22);
+}
+
+.request-flow-step h3 {
+    margin-bottom: 10px;
+    font-size: clamp(1.22rem, 1.8vw, 1.65rem);
+}
+
+.request-flow-step p {
+    position: relative;
+    z-index: 1;
+}
+
+/* =========================================
+   SERVICE CARDS WITH PIPE CONNECTORS
+========================================= */
+
+.service-pipe-cards-section {
+    overflow: hidden;
+}
+
+.service-pipe-grid {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 18px;
+}
+
+.service-pipe-grid::before {
+    content: "";
+    position: absolute;
+    left: 9%;
+    right: 9%;
+    top: 54px;
+    height: 6px;
+    border-radius: 999px;
+    background:
+        linear-gradient(90deg,
+            rgba(17, 20, 23, 0.10),
+            rgba(46, 156, 139, 0.34),
+            rgba(17, 20, 23, 0.10));
+    pointer-events: none;
+}
+
+.service-pipe-card {
+    position: relative;
+    min-height: 250px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    padding: 24px;
+    border: 1px solid var(--color-border);
+    border-radius: 28px;
+    background: rgba(255, 255, 255, 0.78);
+    box-shadow: var(--shadow-soft);
+    transition:
+        transform var(--transition),
+        border-color var(--transition),
+        box-shadow var(--transition);
+}
+
+.service-pipe-card::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 0;
+    width: 10px;
+    height: 30px;
+    transform: translate(-50%, -30px);
+    border-radius: 999px;
+    background:
+        linear-gradient(180deg,
+            rgba(46, 156, 139, 0.44),
+            rgba(17, 20, 23, 0.10));
+}
+
+.service-pipe-card::after {
+    content: "";
+    position: absolute;
+    top: 48px;
+    right: -19px;
+    width: 38px;
+    height: 14px;
+    border-top: 3px solid rgba(46, 156, 139, 0.34);
+    border-bottom: 3px solid rgba(46, 156, 139, 0.34);
+    border-right: 3px solid rgba(46, 156, 139, 0.34);
+    border-radius: 0 18px 18px 0;
+    pointer-events: none;
+}
+
+.service-pipe-card:last-child::after {
+    display: none;
+}
+
+.service-pipe-icon {
+    display: grid;
+    place-items: center;
+    width: 56px;
+    height: 56px;
+    border-radius: 20px;
+    color: var(--color-white);
+    background: var(--color-accent);
+    box-shadow: 0 16px 28px rgba(46, 156, 139, 0.20);
+}
+
+.service-pipe-icon svg {
+    width: 24px;
+    height: 24px;
+}
+
+.service-pipe-card h3 {
+    font-size: clamp(1.22rem, 1.8vw, 1.6rem);
+}
+
+.service-pipe-card p {
+    line-height: 1.6;
+}
+
+.service-pipe-card:hover {
+    transform: translateY(-6px);
+    border-color: rgba(46, 156, 139, 0.30);
+    box-shadow: var(--shadow-card);
+}
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 1180px) {
+    .request-flow-rail {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .request-flow-rail::before {
+        display: none;
+    }
+
+    .service-pipe-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .service-pipe-grid::before {
+        display: none;
+    }
+
+    .service-pipe-card::after {
+        display: none;
+    }
+}
+
+@media (max-width: 720px) {
+    .service-hero-pipe-bg {
+        opacity: 0.42;
+    }
+
+    .service-pipe-base {
+        stroke-width: 14;
+    }
+
+    .service-pipe-flow {
+        stroke-width: 3;
+        stroke-dasharray: 24 20;
+    }
+
+    .service-hero-copy::before {
+        inset: -14px;
+        border-radius: 24px;
+        background: rgba(255, 255, 255, 0.74);
+    }
+
+    .service-hero-side {
+        min-height: 340px;
+        border-radius: 28px;
+    }
+
+    .service-hero-side::before {
+        inset: 14px;
+        border-radius: 18px;
+    }
+
+    .service-hero-side-card {
+        left: 14px;
+        right: 14px;
+        bottom: 14px;
+        grid-template-columns: 46px 1fr;
+        padding: 12px;
+        border-radius: 18px;
+    }
+
+    .service-hero-side-card>span {
+        width: 46px;
+        height: 46px;
+        border-radius: 14px;
+    }
+
+    .request-flow-rail,
+    .service-pipe-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .request-flow-step,
+    .service-pipe-card {
+        min-height: auto;
+    }
+
+    .request-flow-step::before,
+    .service-pipe-card::before {
+        display: none;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+    .service-pipe-flow,
+    .service-pipe-node {
+        animation: none !important;
+    }
+}
+
+.drain-cleaning-page .service-hero-side {
+    background:
+        linear-gradient(180deg, rgba(17, 20, 23, 0.16), rgba(17, 20, 23, 0.46)),
+        url("../assets/images/services/drain-cleaning-hero.jpg") center / cover no-repeat;
+}
+.bathroom-plumbing-page .service-hero-side {
+    background:
+        linear-gradient(180deg, rgba(17, 20, 23, 0.16), rgba(17, 20, 23, 0.46)),
+        url("../assets/images/services/bathroom-plumbing-hero.jpg") center / cover no-repeat;
+}
+
+.water-heater-page .service-hero-side {
+    background:
+        linear-gradient(180deg, rgba(17, 20, 23, 0.16), rgba(17, 20, 23, 0.48)),
+        url("../assets/images/services/water-heater-hero.jpg") center / cover no-repeat;
+}

@@ -15,70 +15,70 @@
     <link rel="stylesheet" href="css/style.css" />
 </head>
 
-<body>
+<body class="drain-cleaning-page">
     <a class="skip-link" href="#main">Skip to main content</a>
 
     <div class="page-shell">
-<!-- ================= HEADER ================= -->
-<header class="site-header" aria-label="Site header">
-    <div class="container-wide header-inner">
-        <a class="logo" href="index.html" aria-label="Pipe & Co home">
-            <span class="logo-mark logo-mark-word" aria-hidden="true">
-                <span>P</span>
-            </span>
+        <!-- ================= HEADER ================= -->
+        <header class="site-header" aria-label="Site header">
+            <div class="container-wide header-inner">
+                <a class="logo" href="index.html" aria-label="Pipe & Co home">
+                    <span class="logo-mark logo-mark-word" aria-hidden="true">
+                        <span>P</span>
+                    </span>
 
-            <span class="logo-text">
-                <span class="logo-name" data-company-name>Pipe & Co</span>
-                <span class="logo-tagline">Provider Match</span>
-            </span>
-        </a>
+                    <span class="logo-text">
+                        <span class="logo-name" data-company-name>Pipe & Co</span>
+                        <span class="logo-tagline">Provider Match</span>
+                    </span>
+                </a>
 
-        <nav class="desktop-nav" aria-label="Main navigation">
-            <ul class="nav-list">
-                <li class="nav-item">
-                    <a class="nav-link" href="index.html">Home</a>
-                </li>
+                <nav class="desktop-nav" aria-label="Main navigation">
+                    <ul class="nav-list">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
 
-                <li class="nav-item">
-                    <a class="nav-link" href="services.html">Services</a>
-                </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="services.html">Services</a>
+                        </li>
 
-                <li class="nav-item">
-                    <a class="nav-link" href="about.html">About</a>
-                </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
 
-                <li class="nav-item">
-                    <a class="nav-link" href="contact.html">Contact</a>
-                </li>
-            </ul>
-        </nav>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
 
-        <div class="header-actions">
-            <a class="btn btn-outline header-phone" href="tel:+12125550188" data-phone-link="button">
-                Call Now
-                <i data-lucide="phone"></i>
-            </a>
+                <div class="header-actions">
+                    <a class="btn btn-outline header-phone" href="tel:+12125550188" data-phone-link="button">
+                        Call Now
+                        <i data-lucide="phone"></i>
+                    </a>
 
-            <a class="mobile-call" href="tel:+12125550188" data-phone-link aria-label="Call Pipe & Co">
-                <i data-lucide="phone"></i>
-            </a>
+                    <a class="mobile-call" href="tel:+12125550188" data-phone-link aria-label="Call Pipe & Co">
+                        <i data-lucide="phone"></i>
+                    </a>
 
-            <button class="mobile-menu-toggle" type="button" aria-label="Open mobile menu" aria-expanded="false"
-                data-mobile-menu-toggle>
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
+                    <button class="mobile-menu-toggle" type="button" aria-label="Open mobile menu" aria-expanded="false"
+                        data-mobile-menu-toggle>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </header>
+
+        <!-- ================= SERVICE TICKER ================= -->
+        <div class="service-ticker" aria-label="Popular plumbing service categories">
+            <div class="service-ticker-track" data-service-ticker></div>
         </div>
-    </div>
-</header>
 
-<!-- ================= SERVICE TICKER ================= -->
-<div class="service-ticker" aria-label="Popular plumbing service categories">
-    <div class="service-ticker-track" data-service-ticker></div>
-</div>
-
-        <!-- MOBILE MENU -->
+        <!-- ================= MOBILE MENU ================= -->
         <div class="mobile-menu" data-mobile-menu aria-hidden="true">
             <div class="mobile-menu-inner">
                 <div class="mobile-menu-panel">
@@ -141,8 +141,22 @@
         </div>
 
         <main id="main">
-            <!-- HERO -->
-            <section class="service-hero">
+            <!-- ================= SERVICE HERO WITH PIPE LINE ================= -->
+            <section class="section service-hero">
+                <div class="service-hero-pipe-bg" aria-hidden="true">
+                    <svg viewBox="0 0 1200 520" preserveAspectRatio="none">
+                        <path class="service-pipe-base"
+                            d="M-40 130 H220 Q260 130 260 170 V255 Q260 295 300 295 H520 Q560 295 560 255 V185 Q560 145 600 145 H900 Q940 145 940 185 V320 Q940 360 980 360 H1240" />
+
+                        <path class="service-pipe-flow"
+                            d="M-40 130 H220 Q260 130 260 170 V255 Q260 295 300 295 H520 Q560 295 560 255 V185 Q560 145 600 145 H900 Q940 145 940 185 V320 Q940 360 980 360 H1240" />
+
+                        <circle class="service-pipe-node service-pipe-node--one" cx="260" cy="295" r="9" />
+                        <circle class="service-pipe-node service-pipe-node--two" cx="560" cy="145" r="9" />
+                        <circle class="service-pipe-node service-pipe-node--three" cx="940" cy="360" r="9" />
+                    </svg>
+                </div>
+
                 <div class="container-wide service-hero-grid">
                     <div class="service-hero-copy" data-aos="fade-up">
                         <span class="eyebrow">Drain cleaning requests</span>
@@ -154,36 +168,97 @@
                             independent local providers who may fit the project category.
                         </p>
 
-                        <div class="service-hero-actions">
+                        <div class="service-hero-actions hero-actions">
                             <a class="btn btn-primary" href="contact.html">
                                 Request Provider Options
                                 <i data-lucide="arrow-up-right"></i>
                             </a>
 
-                            <a class="btn btn-outline" href="services.html">
-                                View All Categories
-                                <i data-lucide="layers-3"></i>
+                            <a class="btn btn-outline" href="#request-flow">
+                                View Request Flow
+                                <i data-lucide="workflow"></i>
                             </a>
                         </div>
                     </div>
 
-                    <div class="service-hero-visual" data-aos="fade-left">
-                        <img src="assets/images/services/drain-cleaning.jpg" alt="Drain cleaning plumbing category" />
-
-                        <div class="service-floating-note">
+                    <div class="service-hero-side" data-aos="fade-left">
+                        <div class="service-hero-side-card">
                             <span>
                                 <i data-lucide="waves"></i>
                             </span>
+
                             <div>
                                 <strong>Category-first matching</strong>
-                                <p>Describe symptoms like slow flow, recurring clogs, backups, or drain location.</p>
+                                <p>
+                                    Describe slow flow, recurring clogs, backups, odors, gurgling, or affected drain
+                                    location before comparing providers.
+                                </p>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
 
-            <!-- OVERVIEW -->
+            <!-- ================= REQUEST FLOW PIPELINE ================= -->
+            <section class="section request-flow-section" id="request-flow">
+                <div class="container">
+                    <div class="section-head">
+                        <div data-aos="fade-up">
+                            <span class="section-kicker">
+                                <i data-lucide="git-branch-plus"></i>
+                                Request flow
+                            </span>
+
+                            <h2>How a drain cleaning request moves through the platform.</h2>
+                        </div>
+
+                        <p data-aos="fade-up" data-aos-delay="120">
+                            Pipe & Co helps homeowners structure the request first, then compare independent provider
+                            options with better context.
+                        </p>
+                    </div>
+
+                    <div class="request-flow-rail">
+                        <article class="request-flow-step" data-aos="fade-up">
+                            <span class="request-flow-number">01</span>
+                            <h3>Describe the drain issue</h3>
+                            <p>
+                                Add symptoms like slow drainage, standing water, repeated clogs, odors, or backups.
+                            </p>
+                        </article>
+
+                        <article class="request-flow-step" data-aos="fade-up" data-aos-delay="80">
+                            <span class="request-flow-number">02</span>
+                            <h3>Add location details</h3>
+                            <p>
+                                Mention the affected area: kitchen sink, bathroom drain, shower, laundry line, toilet,
+                                or
+                                possible main line.
+                            </p>
+                        </article>
+
+                        <article class="request-flow-step" data-aos="fade-up" data-aos-delay="160">
+                            <span class="request-flow-number">03</span>
+                            <h3>Compare provider fit</h3>
+                            <p>
+                                Review availability, quote terms, service area, drain-related experience, and possible
+                                diagnostic fees.
+                            </p>
+                        </article>
+
+                        <article class="request-flow-step" data-aos="fade-up" data-aos-delay="240">
+                            <span class="request-flow-number">04</span>
+                            <h3>Choose who to contact</h3>
+                            <p>
+                                Homeowners can then decide which independent provider to contact directly before booking
+                                work.
+                            </p>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ================= OVERVIEW ================= -->
             <section class="section service-overview">
                 <div class="container">
                     <div class="service-overview-grid">
@@ -203,8 +278,7 @@
 
                             <p>
                                 Pipe & Co does not clean drains directly. The platform helps homeowners organize the
-                                request
-                                and connect with independent local providers.
+                                request and connect with independent local providers.
                             </p>
                         </div>
 
@@ -252,7 +326,69 @@
                 </div>
             </section>
 
-            <!-- FACTORS -->
+            <!-- ================= SERVICE CARDS WITH PIPE CONNECTORS ================= -->
+            <section class="section service-pipe-cards-section">
+                <div class="container">
+                    <div class="section-head">
+                        <div data-aos="fade-up">
+                            <span class="section-kicker">
+                                <i data-lucide="wrench"></i>
+                                Drain request details
+                            </span>
+
+                            <h2>Helpful details before comparing drain cleaning providers.</h2>
+                        </div>
+
+                        <p data-aos="fade-up" data-aos-delay="120">
+                            A clearer request can help homeowners compare provider responses, timing, possible fees, and
+                            next steps more easily.
+                        </p>
+                    </div>
+
+                    <div class="service-pipe-grid">
+                        <article class="service-pipe-card" data-aos="fade-up">
+                            <span class="service-pipe-icon">
+                                <i data-lucide="map-pinned"></i>
+                            </span>
+
+                            <h3>Affected drain location</h3>
+
+                            <p>
+                                Mention whether the issue is in a sink, shower, bathtub, laundry drain, toilet, floor
+                                drain, or possible main line.
+                            </p>
+                        </article>
+
+                        <article class="service-pipe-card" data-aos="fade-up" data-aos-delay="80">
+                            <span class="service-pipe-icon">
+                                <i data-lucide="clock-3"></i>
+                            </span>
+
+                            <h3>Timing and frequency</h3>
+
+                            <p>
+                                Include when it started, whether it happens repeatedly, and whether water is currently
+                                backing up.
+                            </p>
+                        </article>
+
+                        <article class="service-pipe-card" data-aos="fade-up" data-aos-delay="160">
+                            <span class="service-pipe-icon">
+                                <i data-lucide="file-pen-line"></i>
+                            </span>
+
+                            <h3>Extra context</h3>
+
+                            <p>
+                                Add odors, gurgling sounds, previous attempts to clear the drain, photos, access notes,
+                                or urgency level.
+                            </p>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ================= FACTORS ================= -->
             <section class="section service-factors">
                 <div class="container-wide">
                     <div class="factor-panel">
@@ -262,6 +398,7 @@
                                     <i data-lucide="sliders-horizontal"></i>
                                     Provider comparison
                                 </span>
+
                                 <h2>Factors homeowners can compare before choosing a provider.</h2>
                             </div>
 
@@ -308,7 +445,7 @@
                 </div>
             </section>
 
-            <!-- CTA -->
+            <!-- ================= CTA ================= -->
             <section class="section service-cta">
                 <div class="container">
                     <div class="service-cta-panel dark-panel" data-aos="fade-up">
@@ -340,7 +477,7 @@
                 </div>
             </section>
 
-            <!-- FAQ -->
+            <!-- ================= FAQ ================= -->
             <section class="section faq-section">
                 <div class="container">
                     <div class="section-head">
@@ -363,12 +500,12 @@
                                 What details should I include in a drain cleaning request?
                                 <i data-lucide="plus"></i>
                             </button>
+
                             <div class="faq-answer">
                                 <div class="faq-answer-inner">
                                     <p>
                                         Include where the issue is located, how long it has been happening, whether
-                                        water is backing up,
-                                        and whether the problem is recurring or urgent.
+                                        water is backing up, and whether the problem is recurring or urgent.
                                     </p>
                                 </div>
                             </div>
@@ -379,6 +516,7 @@
                                 Does Pipe & Co clean drains directly?
                                 <i data-lucide="plus"></i>
                             </button>
+
                             <div class="faq-answer">
                                 <div class="faq-answer-inner">
                                     <p>
@@ -394,12 +532,12 @@
                                 Are drain cleaning quotes usually free?
                                 <i data-lucide="plus"></i>
                             </button>
+
                             <div class="faq-answer">
                                 <div class="faq-answer-inner">
                                     <p>
                                         Some providers may offer free estimates, while others may charge inspection or
-                                        diagnostic fees.
-                                        Confirm quote terms directly before scheduling.
+                                        diagnostic fees. Confirm quote terms directly before scheduling.
                                     </p>
                                 </div>
                             </div>
@@ -410,6 +548,7 @@
                                 What should I verify before hiring?
                                 <i data-lucide="plus"></i>
                             </button>
+
                             <div class="faq-answer">
                                 <div class="faq-answer-inner">
                                     <p>
@@ -424,15 +563,15 @@
             </section>
         </main>
 
-        <!-- FOOTER -->
+        <!-- ================= FOOTER ================= -->
         <footer class="site-footer">
             <div class="container">
                 <div class="footer-inner">
                     <div class="footer-brand">
                         <a class="logo footer-logo" href="index.html" aria-label="Pipe & Co home">
-                        <span class="logo-mark logo-mark-word" aria-hidden="true">
-                            <span>P</span>
-                        </span>
+                            <span class="logo-mark logo-mark-word" aria-hidden="true">
+                                <span>P</span>
+                            </span>
 
                             <span class="logo-text">
                                 <span class="logo-name" data-company-name>Pipe & Co</span>
@@ -455,8 +594,6 @@
                                 <strong data-company-id>PCO-48291</strong>
                             </span>
                         </div>
-
-                        
                     </div>
 
                     <div class="footer-cols">
@@ -514,7 +651,7 @@
             </div>
         </footer>
 
-        <!-- COOKIE BANNER -->
+        <!-- ================= COOKIE BANNER ================= -->
         <div class="cookie-banner" data-cookie-banner aria-hidden="true">
             <div class="cookie-inner">
                 <div class="cookie-content">
@@ -544,7 +681,7 @@
         </div>
     </div>
 
-    <!-- FAQ JSON-LD -->
+    <!-- ================= FAQ JSON-LD ================= -->
     <script type="application/ld+json">
         {
             "@context": "https://schema.org",
@@ -586,6 +723,7 @@
         }
     </script>
 
+    <!-- ================= LIBRARIES ================= -->
     <script src="https://unpkg.com/lucide@latest"></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
@@ -594,7 +732,6 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <script src="js/services-data.js"></script>
-
     <script src="js/config.js"></script>
     <script src="js/main.js"></script>
     <script src="js/service-page.js"></script>
