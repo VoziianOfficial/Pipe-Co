@@ -936,11 +936,254 @@
     }
 }
 
+
+/* ================================
+   SERVICE HERO FULL PHOTO BACKGROUNDS
+================================ */
+
+.service-hero--full {
+    position: relative;
+    overflow: hidden;
+    min-height: clamp(420px, 62vh, 720px);
+    display: flex;
+    align-items: center;
+    padding: clamp(72px, 9vw, 130px) 0 clamp(56px, 7vw, 100px);
+    isolation: isolate;
+    background-color: #111417;
+}
+
+/* убираем старый светлый overlay, который был для старой hero */
+.service-hero--full::before {
+    display: none !important;
+}
+
+/* общий темный overlay поверх фото */
+.service-hero--full .service-hero-overlay {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    pointer-events: none;
+    background:
+        radial-gradient(circle at 12% 18%, rgba(46, 156, 139, 0.12), transparent 28%),
+        linear-gradient(90deg,
+            rgba(16, 18, 22, 0.78) 0%,
+            rgba(16, 18, 22, 0.58) 44%,
+            rgba(16, 18, 22, 0.38) 70%,
+            rgba(16, 18, 22, 0.66) 100%),
+        linear-gradient(180deg, rgba(16, 18, 22, 0.08), rgba(16, 18, 22, 0.38));
+}
+
+/* контент поверх фото */
+.service-hero--full .container-wide {
+    position: relative;
+    z-index: 2;
+}
+
+.service-hero--full .service-hero-content {
+    max-width: 1080px;
+    width: 100%;
+}
+
+.service-hero--full .eyebrow {
+    color: rgba(255, 255, 255, 0.78);
+}
+
+.service-hero--full h1 {
+    max-width: 980px;
+    margin: 0 0 20px;
+    color: #ffffff;
+    font-size: clamp(2.4rem, 5vw, 5rem);
+    line-height: 1.02;
+    letter-spacing: -0.04em;
+}
+
+.service-hero--full .service-hero-lead {
+    max-width: 900px;
+    margin: 0 0 30px;
+    color: rgba(255, 255, 255, 0.84);
+    font-size: clamp(1rem, 1.45vw, 1.18rem);
+    line-height: 1.7;
+}
+
+/* убираем старую белую подложку под текст */
+.service-hero--full .service-hero-copy::before {
+    display: none !important;
+}
+
+/* старую боковую карточку скрываем, если случайно осталась */
+.service-hero--full .service-hero-side,
+.service-hero--full .service-hero-visual,
+.service-hero--full .service-hero-pipe-bg {
+    display: none !important;
+}
+
+/* фоны страниц — используем существующие картинки */
+.service-hero--bathroom {
+    background:
+        url("../assets/images/services/bathroom-plumbing.jpg") center center / cover no-repeat;
+}
+
+.service-hero--drain {
+    background:
+        url("../assets/images/services/drain-cleaning.jpg") center center / cover no-repeat;
+}
+
+.service-hero--emergency {
+    background:
+        url("../assets/images/services/emergency-plumbing.jpg") center center / cover no-repeat;
+}
+
+.service-hero--leak {
+    background:
+        url("../assets/images/services/leak-detection.jpg") center center / cover no-repeat;
+}
+
+.service-hero--pipe-repair {
+    background:
+        url("../assets/images/services/pipe-repair.jpg") center center / cover no-repeat;
+}
+
+.service-hero--water-heater {
+    background:
+        url("../assets/images/services/water-heater.jpg") center center / cover no-repeat;
+}
+
+/* badges */
+.service-hero-topline {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px 20px;
+    margin-bottom: 20px;
+}
+
+.service-hero-mini-badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.service-mini-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    min-height: 38px;
+    padding: 0 14px;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.10);
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    backdrop-filter: blur(10px);
+    color: rgba(255, 255, 255, 0.92);
+    font-size: 0.88rem;
+    line-height: 1;
+}
+
+.service-mini-badge svg {
+    width: 16px;
+    height: 16px;
+}
+
+/* stats */
+.service-hero-stats {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 16px;
+    margin-bottom: 30px;
+    max-width: 980px;
+}
+
+.service-hero-stat {
+    padding: 18px 20px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(12px);
+}
+
+.service-hero-stat strong {
+    display: block;
+    margin-bottom: 8px;
+    color: #ffffff;
+    font-size: 1.1rem;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.service-hero-stat span {
+    display: block;
+    color: rgba(255, 255, 255, 0.72);
+    font-size: 0.92rem;
+    line-height: 1.5;
+}
+
+.service-hero--full .service-hero-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+}
+
+.btn-outline-light {
+    border-color: rgba(255, 255, 255, 0.18);
+    color: #ffffff;
+    background: rgba(255, 255, 255, 0.06);
+}
+
+.btn-outline-light:hover {
+    color: #111417;
+    background: #ffffff;
+    border-color: #ffffff;
+}
+
+/* responsive */
+@media (max-width: 991px) {
+    .service-hero--full {
+        min-height: auto;
+        padding: 84px 0 64px;
+    }
+
+    .service-hero-topline {
+        justify-content: flex-start;
+    }
+
+    .service-hero-stats {
+        grid-template-columns: 1fr;
+        max-width: 100%;
+    }
+
+    .service-hero--full h1,
+    .service-hero--full .service-hero-lead {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 640px) {
+    .service-hero--full {
+        padding: 76px 0 56px;
+    }
+
+    .service-mini-badge {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .service-hero--full .service-hero-actions {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .service-hero--full .service-hero-actions .btn {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
 .drain-cleaning-page .service-hero-side {
     background:
         linear-gradient(180deg, rgba(17, 20, 23, 0.16), rgba(17, 20, 23, 0.46)),
         url("../assets/images/services/drain-cleaning-hero.jpg") center / cover no-repeat;
 }
+
 .bathroom-plumbing-page .service-hero-side {
     background:
         linear-gradient(180deg, rgba(17, 20, 23, 0.16), rgba(17, 20, 23, 0.46)),
@@ -951,4 +1194,33 @@
     background:
         linear-gradient(180deg, rgba(17, 20, 23, 0.16), rgba(17, 20, 23, 0.48)),
         url("../assets/images/services/water-heater-hero.jpg") center / cover no-repeat;
+}
+
+.service-hero--emergency {
+    background:
+        linear-gradient(90deg, rgba(16, 18, 22, 0.86) 0%, rgba(16, 18, 22, 0.68) 38%, rgba(16, 18, 22, 0.50) 65%, rgba(16, 18, 22, 0.74) 100%),
+        url("../assets/images/home/home-hero.jpg") center center / cover no-repeat;
+}
+
+.service-hero--leak {
+    background:
+        linear-gradient(90deg, rgba(16, 18, 22, 0.84) 0%, rgba(16, 18, 22, 0.66) 38%, rgba(16, 18, 22, 0.48) 65%, rgba(16, 18, 22, 0.72) 100%),
+        url("../assets/images/services/drain-cleaning-hero-card.jpg") center center / cover no-repeat;
+}
+
+.service-hero--pipe-repair {
+    background:
+        linear-gradient(90deg, rgba(16, 18, 22, 0.84) 0%, rgba(16, 18, 22, 0.66) 38%, rgba(16, 18, 22, 0.48) 65%, rgba(16, 18, 22, 0.72) 100%),
+        url("../assets/images/services/pipe-repair-hero.jpg") center center / cover no-repeat;
+}
+
+.service-hero--water-heater {
+    background:
+        linear-gradient(90deg, rgba(16, 18, 22, 0.84) 0%, rgba(16, 18, 22, 0.66) 38%, rgba(16, 18, 22, 0.48) 65%, rgba(16, 18, 22, 0.72) 100%),
+        url("../assets/images/services/water-heater.jpg") center center / cover no-repeat;
+}
+
+.service-hero--pipe-repair {
+    background:
+        url("../assets/images/services/smart-matrix-bg.jpg") center center / cover no-repeat;
 }

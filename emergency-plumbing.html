@@ -143,62 +143,67 @@
 
         <main id="main">
             <!-- ================= SERVICE HERO WITH PIPE LINE ================= -->
-            <section class="section service-hero">
-                <div class="service-hero-pipe-bg" aria-hidden="true">
-                    <svg viewBox="0 0 1200 520" preserveAspectRatio="none">
-                        <path class="service-pipe-base"
-                            d="M-40 130 H220 Q260 130 260 170 V255 Q260 295 300 295 H520 Q560 295 560 255 V185 Q560 145 600 145 H900 Q940 145 940 185 V320 Q940 360 980 360 H1240" />
+<section class="section service-hero service-hero--full service-hero--emergency">
+    <div class="service-hero-overlay" aria-hidden="true"></div>
 
-                        <path class="service-pipe-flow"
-                            d="M-40 130 H220 Q260 130 260 170 V255 Q260 295 300 295 H520 Q560 295 560 255 V185 Q560 145 600 145 H900 Q940 145 940 185 V320 Q940 360 980 360 H1240" />
+    <div class="container-wide">
+        <div class="service-hero-content" data-aos="fade-up">
+            <div class="service-hero-topline">
+                <span class="eyebrow">Emergency plumbing requests</span>
 
-                        <circle class="service-pipe-node service-pipe-node--one" cx="260" cy="295" r="9" />
-                        <circle class="service-pipe-node service-pipe-node--two" cx="560" cy="145" r="9" />
-                        <circle class="service-pipe-node service-pipe-node--three" cx="940" cy="360" r="9" />
-                    </svg>
+                <div class="service-hero-mini-badges">
+                    <span class="service-mini-badge">
+                        <i data-lucide="siren"></i>
+                        Urgent requests
+                    </span>
+
+                    <span class="service-mini-badge">
+                        <i data-lucide="droplets"></i>
+                        Active water issues
+                    </span>
+                </div>
+            </div>
+
+            <h1>Compare provider options for urgent plumbing categories.</h1>
+
+            <p class="text-lead service-hero-lead">
+                Pipe & Co helps homeowners organize time-sensitive plumbing request details before comparing
+                independent local provider options. Share active water status, issue location, timing,
+                property risk, and whether safety may be affected. Pipe & Co is a matching platform, not an
+                emergency dispatch service.
+            </p>
+
+            <div class="service-hero-stats">
+                <div class="service-hero-stat">
+                    <strong>1,940+</strong>
+                    <span>Urgent plumbing requests started</span>
                 </div>
 
-                <div class="container-wide service-hero-grid">
-                    <div class="service-hero-copy" data-aos="fade-up">
-                        <span class="eyebrow">Emergency plumbing requests</span>
-
-                        <h1>Compare provider options for urgent plumbing categories.</h1>
-
-                        <p class="text-lead">
-                            Pipe & Co helps homeowners organize time-sensitive plumbing request details before comparing
-                            independent local provider options. The platform is not an emergency dispatch service.
-                        </p>
-
-                        <div class="service-hero-actions hero-actions">
-                            <a class="btn btn-primary" href="contact.html">
-                                Request Provider Options
-                                <i data-lucide="arrow-up-right"></i>
-                            </a>
-
-                            <a class="btn btn-outline" href="#request-flow">
-                                View Request Flow
-                                <i data-lucide="workflow"></i>
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="service-hero-side" data-aos="fade-left">
-                        <div class="service-hero-side-card">
-                            <span>
-                                <i data-lucide="siren"></i>
-                            </span>
-
-                            <div>
-                                <strong>Urgency-first details</strong>
-                                <p>
-                                    Describe active water, shutoff status, issue location, timing, property risk, and
-                                    whether safety is affected.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
+                <div class="service-hero-stat">
+                    <strong>Leaks · Backups · Shutoff</strong>
+                    <span>Common urgent request types</span>
                 </div>
-            </section>
+
+                <div class="service-hero-stat">
+                    <strong>Timing · Fees · Scope</strong>
+                    <span>Key provider details to compare</span>
+                </div>
+            </div>
+
+            <div class="service-hero-actions hero-actions">
+                <a class="btn btn-primary" href="contact.html">
+                    Request Provider Options
+                    <i data-lucide="arrow-up-right"></i>
+                </a>
+
+                <a class="btn btn-outline btn-outline-light" href="#request-flow">
+                    View Request Flow
+                    <i data-lucide="workflow"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
 
             <!-- ================= REQUEST FLOW PIPELINE ================= -->
             <section class="section request-flow-section" id="request-flow">
