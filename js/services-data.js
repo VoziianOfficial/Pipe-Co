@@ -1,10 +1,5 @@
 "use strict";
 
-/*
-  Pipe & Co — services data
-  Change service cards / ticker / footer services here.
-*/
-
 const SERVICES_DATA = [
     {
         title: "Drain Cleaning",

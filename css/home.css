@@ -1,8 +1,4 @@
-/* ================================
-   HOME PAGE
-================================ */
 
-/* ================= HOME HERO ================= */
 
 .home-hero {
     position: relative;
@@ -239,8 +235,6 @@
     transform: translateX(32px);
 }
 
-/* ================= MATCH STRIP ================= */
-
 .match-strip {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -307,8 +301,6 @@
     opacity: 1;
 }
 
-/* ================= HOME SERVICES ================= */
-
 .home-services {
     overflow: hidden;
 }
@@ -348,8 +340,6 @@
     color: var(--color-dark);
     background: var(--color-white);
 }
-
-/* ================= AREA SECTION ================= */
 
 .area-section {
     padding-top: clamp(40px, 6vw, 90px);
@@ -644,8 +634,6 @@
     }
 }
 
-/* ================= WHY SECTION ================= */
-
 .why-section {
     overflow: hidden;
 }
@@ -685,8 +673,6 @@
 .why-cards .info-card:nth-child(3) {
     margin-left: 108px;
 }
-
-/* ================= REVIEWS ================= */
 
 .reviews-section {
     background:
@@ -777,8 +763,6 @@
     background: var(--color-accent);
 }
 
-/* ================= REQUEST SECTION ================= */
-
 .request-section {
     padding-top: clamp(42px, 7vw, 96px);
 }
@@ -867,13 +851,9 @@
     padding: clamp(18px, 2.4vw, 26px);
 }
 
-/* ================= FAQ SECTION ================= */
-
 .faq-section {
     padding-top: clamp(38px, 6vw, 84px);
 }
-
-/* ================= RESPONSIVE ================= */
 
 @media (max-width: 1180px) {
     .home-hero-grid {
@@ -1172,10 +1152,6 @@
     }
 }
 
-/* ================================
-   SERVICE PHOTO CARDS SAME SIZE
-================================ */
-
 .service-photo-grid {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -1224,10 +1200,6 @@
         min-height: 270px !important;
     }
 }
-
-/* ================================
-   REVIEWS SLIDER FIX / REDESIGN
-================================ */
 
 .reviews-section {
     overflow: hidden;
@@ -1350,10 +1322,6 @@
         border-radius: 24px;
     }
 }
-
-/* ================================
-   PREMIUM REVIEWS RATING + PAGINATION
-================================ */
 
 .review-rating {
     display: flex;
@@ -1496,10 +1464,6 @@
     }
 }
 
-/* ================================
-   REVIEWS LOOP SAFE FIX
-================================ */
-
 .reviews-section {
     overflow: hidden !important;
 }
@@ -1525,10 +1489,6 @@
 .review-card {
     height: 100%;
 }
-
-/* ================================
-   PROVIDER CHECK SECTION
-================================ */
 
 .provider-check-section {
     overflow: hidden;
@@ -1738,7 +1698,7 @@
         border-radius: 24px;
     }
 }
-/* Hide provider check section on tablet and mobile */
+
 @media (max-width: 980px) {
     .provider-check-section {
         display: none !important;

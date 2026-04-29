@@ -1,8 +1,4 @@
-/* ================================
-   INDIVIDUAL SERVICE PAGES
-================================ */
 
-/* ================= SERVICE HERO ================= */
 
 .service-hero {
     position: relative;
@@ -136,8 +132,6 @@
     color: rgba(255, 255, 255, 0.72);
 }
 
-/* ================= OVERVIEW ================= */
-
 .service-overview {
     padding-top: clamp(42px, 6vw, 84px);
 }
@@ -226,8 +220,6 @@
     box-shadow: var(--shadow-card);
 }
 
-/* ================= FACTORS ================= */
-
 .service-factors {
     overflow: hidden;
 }
@@ -313,8 +305,6 @@
     font-size: clamp(1.18rem, 1.7vw, 1.55rem);
 }
 
-/* ================= CTA BLOCK ================= */
-
 .service-cta {
     padding-top: clamp(40px, 6vw, 84px);
 }
@@ -365,8 +355,6 @@
 .service-cta-actions .btn {
     width: 100%;
 }
-
-/* ================= RESPONSIVE ================= */
 
 @media (max-width: 1180px) {
 
@@ -452,10 +440,6 @@
         min-height: auto;
     }
 }
-
-/* =========================================
-   SERVICE PAGE — HERO PIPE LINE
-========================================= */
 
 .service-hero {
     position: relative;
@@ -628,10 +612,6 @@
     }
 }
 
-/* =========================================
-   REQUEST FLOW SECTION — PIPELINE
-========================================= */
-
 .request-flow-section {
     overflow: hidden;
 }
@@ -729,10 +709,6 @@
     position: relative;
     z-index: 1;
 }
-
-/* =========================================
-   SERVICE CARDS WITH PIPE CONNECTORS
-========================================= */
 
 .service-pipe-cards-section {
     overflow: hidden;
@@ -841,10 +817,6 @@
     box-shadow: var(--shadow-card);
 }
 
-/* =========================================
-   RESPONSIVE
-========================================= */
-
 @media (max-width: 1180px) {
     .request-flow-rail {
         grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -936,11 +908,6 @@
     }
 }
 
-
-/* ================================
-   SERVICE HERO FULL PHOTO BACKGROUNDS
-================================ */
-
 .service-hero--full {
     position: relative;
     overflow: hidden;
@@ -952,12 +919,10 @@
     background-color: #111417;
 }
 
-/* убираем старый светлый overlay, который был для старой hero */
 .service-hero--full::before {
     display: none !important;
 }
 
-/* общий темный overlay поверх фото */
 .service-hero--full .service-hero-overlay {
     position: absolute;
     inset: 0;
@@ -973,7 +938,6 @@
         linear-gradient(180deg, rgba(16, 18, 22, 0.08), rgba(16, 18, 22, 0.38));
 }
 
-/* контент поверх фото */
 .service-hero--full .container-wide {
     position: relative;
     z-index: 2;
@@ -1005,19 +969,16 @@
     line-height: 1.7;
 }
 
-/* убираем старую белую подложку под текст */
 .service-hero--full .service-hero-copy::before {
     display: none !important;
 }
 
-/* старую боковую карточку скрываем, если случайно осталась */
 .service-hero--full .service-hero-side,
 .service-hero--full .service-hero-visual,
 .service-hero--full .service-hero-pipe-bg {
     display: none !important;
 }
 
-/* фоны страниц — используем существующие картинки */
 .service-hero--bathroom {
     background:
         url("../assets/images/services/bathroom-plumbing.jpg") center center / cover no-repeat;
@@ -1048,7 +1009,6 @@
         url("../assets/images/services/water-heater.jpg") center center / cover no-repeat;
 }
 
-/* badges */
 .service-hero-topline {
     display: flex;
     flex-wrap: wrap;
@@ -1084,7 +1044,6 @@
     height: 16px;
 }
 
-/* stats */
 .service-hero-stats {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -1135,7 +1094,6 @@
     border-color: #ffffff;
 }
 
-/* responsive */
 @media (max-width: 991px) {
     .service-hero--full {
         min-height: auto;
@@ -1224,10 +1182,6 @@
     background:
         url("../assets/images/services/smart-matrix-bg.jpg") center center / cover no-repeat;
 }
-
-/* =========================================
-   BATHROOM PLUMBING SIGNAL BOARD
-========================================= */
 
 .plumber-signal-section {
     overflow: hidden;
@@ -1418,10 +1372,6 @@
     }
 }
 
-/* =========================================
-   BATHROOM PROVIDER MATCH PIPELINE
-========================================= */
-
 .provider-pipeline-section {
     overflow: hidden;
 }
@@ -1547,10 +1497,6 @@
     box-shadow: var(--shadow-card);
 }
 
-/* =========================================
-   RESPONSIVE FOR NEW BATHROOM SECTIONS
-========================================= */
-
 @media (max-width: 1180px) {
     .plumber-signal-panel {
         grid-template-columns: 1fr;
@@ -1622,10 +1568,6 @@
         animation: none !important;
     }
 }
-
-/* =========================================
-   DRAIN CLEANING — ROUTE SCANNER
-========================================= */
 
 .drain-scanner-section {
     overflow: hidden;
@@ -1822,10 +1764,6 @@
     animation-delay: 1.4s;
 }
 
-/* =========================================
-   DRAIN CLEANING — ISSUE CARDS
-========================================= */
-
 .drain-issue-section {
     overflow: hidden;
 }
@@ -1918,10 +1856,6 @@
     border-color: rgba(46, 156, 139, 0.34);
     box-shadow: var(--shadow-card);
 }
-
-/* =========================================
-   EMERGENCY — SIGNAL PANEL
-========================================= */
 
 .emergency-signal-section {
     overflow: hidden;
@@ -2153,10 +2087,6 @@
     animation-delay: 1.4s;
 }
 
-/* =========================================
-   EMERGENCY — URGENCY FLOW
-========================================= */
-
 .urgency-flow-section {
     overflow: hidden;
 }
@@ -2236,10 +2166,6 @@
     border-color: rgba(46, 156, 139, 0.34);
     box-shadow: var(--shadow-card);
 }
-
-/* =========================================
-   ANIMATIONS
-========================================= */
 
 @keyframes drainScannerGlow {
     from {
@@ -2344,10 +2270,6 @@
         transform: translateY(-10px);
     }
 }
-
-/* =========================================
-   RESPONSIVE
-========================================= */
 
 @media (max-width: 1180px) {
 
@@ -2459,10 +2381,6 @@
     }
 }
 
-/* =========================================
-   LEAK DETECTION — RADAR SECTION
-========================================= */
-
 .leak-radar-section,
 .leak-detail-section {
     overflow: hidden;
@@ -2543,8 +2461,6 @@
 .leak-radar-copy .btn {
     width: fit-content;
 }
-
-/* ================= LEAK RADAR VISUAL ================= */
 
 .leak-radar-visual {
     min-height: 440px;
@@ -2682,10 +2598,6 @@
     animation-delay: 1.4s;
 }
 
-/* =========================================
-   LEAK DETAIL CARDS
-========================================= */
-
 .leak-detail-grid {
     display: grid;
     grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -2759,10 +2671,6 @@
     box-shadow: var(--shadow-card);
 }
 
-/* =========================================
-   LEAK ANIMATIONS
-========================================= */
-
 @keyframes leakGlowMove {
     from {
         transform: translate3d(0, 0, 0) scale(1);
@@ -2808,10 +2716,6 @@
         transform: translateY(-10px);
     }
 }
-
-/* =========================================
-   LEAK RESPONSIVE
-========================================= */
 
 @media (max-width: 1180px) {
     .leak-radar-panel {
@@ -2884,10 +2788,6 @@
         animation: none !important;
     }
 }
-
-/* =========================================
-   WATER HEATER — TEMPERATURE DIAGNOSTIC SECTION
-========================================= */
 
 .water-heater-diagnostic-section,
 .water-heater-detail-section {
@@ -2970,8 +2870,6 @@
 .water-heater-diagnostic-copy .btn {
     width: fit-content;
 }
-
-/* ================= HEATER VISUAL ================= */
 
 .water-heater-visual {
     min-height: 440px;
@@ -3121,10 +3019,6 @@
     animation: heaterPipeFlow 2.8s linear infinite;
 }
 
-/* =========================================
-   WATER HEATER DETAIL CARDS
-========================================= */
-
 .water-heater-detail-grid {
     display: grid;
     grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -3198,10 +3092,6 @@
     box-shadow: var(--shadow-card);
 }
 
-/* =========================================
-   WATER HEATER ANIMATIONS
-========================================= */
-
 @keyframes heaterGlowMove {
     from {
         transform: translate3d(0, 0, 0) scale(1);
@@ -3255,10 +3145,6 @@
         transform: translateY(-10px);
     }
 }
-
-/* =========================================
-   WATER HEATER RESPONSIVE
-========================================= */
 
 @media (max-width: 1180px) {
     .water-heater-diagnostic-panel {
@@ -3339,11 +3225,6 @@
         animation: none !important;
     }
 }
-
-
-/* =========================================
-   EMERGENCY PLUMBING — URGENCY BOARD
-========================================= */
 
 .emergency-board-section,
 .emergency-prep-section {
@@ -3618,10 +3499,6 @@
     animation: emergencyStatusPulse 2s ease-in-out infinite;
 }
 
-/* =========================================
-   EMERGENCY PREP CARDS
-========================================= */
-
 .emergency-prep-grid {
     display: grid;
     grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -3694,10 +3571,6 @@
     border-color: rgba(46, 156, 139, 0.34);
     box-shadow: var(--shadow-card);
 }
-
-/* =========================================
-   EMERGENCY ANIMATIONS
-========================================= */
 
 @keyframes emergencyGlowMove {
     from {
@@ -3778,10 +3651,6 @@
         box-shadow: 0 0 0 0 rgba(46, 156, 139, 0);
     }
 }
-
-/* =========================================
-   EMERGENCY RESPONSIVE
-========================================= */
 
 @media (max-width: 1180px) {
     .emergency-board-panel {

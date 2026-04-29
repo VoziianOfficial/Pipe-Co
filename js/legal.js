@@ -1,9 +1,5 @@
 "use strict";
 
-/*
-  Pipe & Co — legal pages logic
-*/
-
 document.addEventListener("DOMContentLoaded", () => {
     initLegalSidebarActiveState();
 });

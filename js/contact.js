@@ -1,9 +1,5 @@
 "use strict";
 
-/*
-  Pipe & Co — contact page logic
-*/
-
 document.addEventListener("DOMContentLoaded", () => {
     initContactVisualMotion();
     initContactMapMotion();

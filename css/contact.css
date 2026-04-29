@@ -1,8 +1,4 @@
-/* ================================
-   CONTACT PAGE
-================================ */
 
-/* ================= CONTACT HERO ================= */
 
 .contact-hero {
     position: relative;
@@ -15,7 +11,7 @@
     position: absolute;
     inset: 0;
     background:
-    
+
         radial-gradient(circle at 10% 6%, rgba(46, 156, 139, 0.12), transparent 30%),
         radial-gradient(circle at 90% 18%, rgba(17, 20, 23, 0.06), transparent 32%);
     pointer-events: none;
@@ -146,8 +142,6 @@
     }
 }
 
-/* ================= CONTACT MAIN ================= */
-
 .contact-main-section {
     padding-top: clamp(42px, 6vw, 86px);
 }
@@ -205,8 +199,6 @@
     max-width: 620px;
     margin-left: auto;
 }
-
-/* ================= CONTACT CARDS ================= */
 
 .contact-cards-section {
     padding-top: clamp(36px, 5vw, 74px);
@@ -293,8 +285,6 @@
     border-color: rgba(46, 156, 139, 0.32);
     box-shadow: var(--shadow-card);
 }
-
-/* ================= CONTACT MAP ================= */
 
 .contact-map-section {
     padding-top: clamp(42px, 6vw, 86px);
@@ -446,8 +436,6 @@
     bottom: 18%;
 }
 
-/* ================= RESPONSIVE ================= */
-
 @media (max-width: 1180px) {
 
     .contact-hero-grid,
@@ -560,10 +548,6 @@
         padding-inline: 11px;
     }
 }
-
-/* ================================
-   CONTACT HERO — PREMIUM REDESIGN
-================================ */
 
 .contact-hero--premium {
     position: relative;
@@ -781,7 +765,6 @@
     margin-top: 2px;
 }
 
-/* tablet */
 @media (max-width: 980px) {
     .contact-hero--premium {
         padding: 28px 0 34px;
@@ -813,7 +796,6 @@
     }
 }
 
-/* mobile */
 @media (max-width: 560px) {
     .contact-hero--premium {
         padding: 22px 0 28px;
@@ -872,10 +854,6 @@
         height: 38px;
     }
 }
-
-/* ================================
-   CONTACT MAP PANEL — PREMIUM ANIMATED
-================================ */
 
 .contact-map-panel--premium {
     position: relative;
@@ -1216,7 +1194,6 @@
     }
 }
 
-/* tablet */
 @media (max-width: 980px) {
     .contact-map-panel--premium {
         grid-template-columns: 1fr;
@@ -1239,7 +1216,6 @@
     }
 }
 
-/* mobile */
 @media (max-width: 560px) {
     .contact-map-panel--premium {
         padding: 14px;

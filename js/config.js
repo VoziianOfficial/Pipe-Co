@@ -1,10 +1,5 @@
 "use strict";
 
-/*
-  Pipe & Co — global site settings
-  Change values here once, and they will be injected across all pages.
-*/
-
 const SITE_CONFIG = {
     companyName: "Pipe & Co",
     companyId: "PCO-48291",

@@ -1,10 +1,5 @@
 "use strict";
 
-/*
-  Pipe & Co — shared global behavior
-  This file works on every page.
-*/
-
 document.addEventListener("DOMContentLoaded", () => {
     initConfigInjection();
     initHeader();
@@ -14,10 +9,6 @@ document.addEventListener("DOMContentLoaded", () => {
     initForms();
     initLibraries();
 });
-
-/* ================================
-   CONFIG INJECTION
-================================ */
 
 function getConfig() {
     const config = window.SITE_CONFIG || {};
@@ -232,10 +223,6 @@ function formatTelHref(value) {
     return `tel:${cleaned}`;
 }
 
-/* ================================
-   HEADER
-================================ */
-
 function initHeader() {
     const header = document.querySelector(".site-header");
 
@@ -269,10 +256,6 @@ function setActiveNavLink() {
         }
     });
 }
-
-/* ================================
-   MOBILE MENU
-================================ */
 
 function initMobileMenu() {
     const toggle = document.querySelector("[data-mobile-menu-toggle]");
@@ -369,10 +352,6 @@ function trapFocus(container, trigger, selectors) {
     });
 }
 
-/* ================================
-   FAQ
-================================ */
-
 function initFaqAccordions() {
     const faqItems = document.querySelectorAll(".faq-item");
 
@@ -412,10 +391,6 @@ function initFaqAccordions() {
     });
 }
 
-/* ================================
-   COOKIE BANNER
-================================ */
-
 function initCookieBanner() {
     const banner = document.querySelector("[data-cookie-banner]");
     const acceptButton = document.querySelector("[data-cookie-accept]");
@@ -443,10 +418,6 @@ function initCookieBanner() {
     acceptButton.addEventListener("click", () => saveChoice("accepted"));
     declineButton.addEventListener("click", () => saveChoice("declined"));
 }
-
-/* ================================
-   FORMS
-================================ */
 
 function initForms() {
     const forms = document.querySelectorAll("[data-request-form]");
@@ -528,10 +499,6 @@ function showFormMessage(element, text, type) {
     element.textContent = text;
     element.className = `form-message form-message--${type}`;
 }
-
-/* ================================
-   LIBRARIES
-================================ */
 
 function initLibraries() {
     initLucideIcons();

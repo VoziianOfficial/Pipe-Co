@@ -1,18 +1,10 @@
 "use strict";
 
-/*
-  Pipe & Co — home page logic
-*/
-
 document.addEventListener("DOMContentLoaded", () => {
     initReviewsSlider();
     initHeroPointerGlow();
     initMapMicroInteraction();
 });
-
-/* ================================
-   REVIEWS SLIDER
-================================ */
 
 function initReviewsSlider() {
     const sliderElement = document.querySelector(".reviews-slider");
@@ -91,10 +83,6 @@ function updateReviewsCounter(swiper, currentEl, totalEl, formatNumber) {
     totalEl.textContent = formatNumber(total);
 }
 
-/* ================================
-   HERO POINTER GLOW
-================================ */
-
 function initHeroPointerGlow() {
     const hero = document.querySelector(".home-hero");
 
@@ -113,10 +101,6 @@ function initHeroPointerGlow() {
         hero.style.setProperty("--hero-y", `${y}%`);
     });
 }
-
-/* ================================
-   MAP MICRO INTERACTION
-================================ */
 
 function initMapMicroInteraction() {
     const map = document.querySelector(".area-map");

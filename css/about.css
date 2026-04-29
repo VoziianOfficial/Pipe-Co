@@ -1,8 +1,4 @@
-/* ================================
-   ABOUT PAGE
-================================ */
 
-/* ================= ABOUT HERO ================= */
 
 .about-hero {
     position: relative;
@@ -137,10 +133,6 @@
     color: rgba(255, 255, 255, 0.72);
 }
 
-/* ================================
-   ABOUT HERO PHOTO VERSION — COMPACT
-================================ */
-
 .about-hero--photo {
     position: relative;
     overflow: hidden;
@@ -245,8 +237,6 @@
     color: rgba(255, 255, 255, 0.72);
 }
 
-/* ================= ABOUT COUNTERS ================= */
-
 .about-counters-section {
     padding: clamp(14px, 2vw, 26px) 0;
     overflow: hidden;
@@ -301,8 +291,6 @@
     font-size: 0.88rem;
     line-height: 1.35;
 }
-
-/* ================= STORY ================= */
 
 .about-story-section {
     overflow: hidden;
@@ -437,10 +425,6 @@
     height: 16px;
     color: var(--color-accent);
 }
-
-/* ================================
-   ABOUT SNAPSHOT SECTION — MAP VERSION
-================================ */
 
 .about-snapshot-section {
     overflow: hidden;
@@ -725,8 +709,6 @@
     line-height: 1.5;
 }
 
-/* ================= MODEL ================= */
-
 .about-model-section {
     padding-top: clamp(42px, 6vw, 86px);
 }
@@ -858,8 +840,6 @@
     background: rgba(255, 255, 255, 0.42);
 }
 
-/* ================= JOURNEY SECTION ================= */
-
 .about-journey-section {
     overflow: hidden;
 }
@@ -933,8 +913,6 @@
 .journey-step h3 {
     margin-bottom: 10px;
 }
-
-/* ================= MARQUEE ================= */
 
 .about-principles-marquee {
     position: relative;
@@ -1010,8 +988,6 @@
     }
 }
 
-/* ================= VALUES ================= */
-
 .about-values-section {
     overflow: hidden;
 }
@@ -1083,8 +1059,6 @@
     border-color: rgba(46, 156, 139, 0.32);
     box-shadow: var(--shadow-card);
 }
-
-/* ================= TRUST SECTION ================= */
 
 .about-trust-section {
     overflow: hidden;
@@ -1179,8 +1153,6 @@
     line-height: 1.55;
 }
 
-/* ================= CTA ================= */
-
 .about-cta-section {
     padding-top: clamp(38px, 6vw, 84px);
 }
@@ -1222,8 +1194,6 @@
     max-width: 620px;
     margin-top: 18px;
 }
-
-/* ================= RESPONSIVE ================= */
 
 @media (max-width: 1180px) {
 
@@ -1504,11 +1474,6 @@
     }
 }
 
-/* ================================
-   ABOUT PREMIUM FINAL POLISH
-================================ */
-
-/* counters спокойнее */
 .about-counters-section {
     padding-top: clamp(10px, 1.6vw, 18px);
     padding-bottom: clamp(18px, 2.2vw, 28px);
@@ -1521,7 +1486,6 @@
         linear-gradient(145deg, rgba(255, 255, 255, 0.82), rgba(238, 240, 242, 0.66));
 }
 
-/* story меньше по высоте */
 .about-story-image {
     min-height: 500px;
 }
@@ -1530,7 +1494,6 @@
     min-height: 500px;
 }
 
-/* snapshot-карта компактнее */
 .about-snapshot-panel {
     padding: clamp(18px, 3vw, 34px);
 }
@@ -1551,7 +1514,6 @@
     padding: 14px;
 }
 
-/* model section чуть ниже и плотнее */
 .about-model-section {
     padding-top: clamp(28px, 4vw, 56px);
 }
@@ -1564,7 +1526,6 @@
     margin-bottom: clamp(22px, 3vw, 36px);
 }
 
-/* journey cards меньше */
 .journey-step {
     min-height: 220px;
 }
@@ -1573,7 +1534,6 @@
     margin-bottom: 42px;
 }
 
-/* values меньше и ровнее */
 .value-card {
     min-height: 240px;
     padding: 22px;
@@ -1590,7 +1550,6 @@
     height: 23px;
 }
 
-/* trust section компактнее */
 .about-trust-panel {
     padding: clamp(22px, 3.5vw, 42px);
 }
@@ -1599,12 +1558,10 @@
     min-height: 220px;
 }
 
-/* CTA меньше */
 .about-cta {
     padding: clamp(24px, 4vw, 46px);
 }
 
-/* mobile fixes */
 @media (max-width: 720px) {
     .about-story-image {
         min-height: 380px;

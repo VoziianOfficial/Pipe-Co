@@ -1,8 +1,4 @@
-/* ================================
-   SERVICES PAGE
-================================ */
 
-/* ================= SERVICES HERO ================= */
 
 .services-hero {
     position: relative;
@@ -52,8 +48,6 @@
 .services-hero-copy .text-lead {
     max-width: 650px;
 }
-
-/* ================= SERVICES HERO BOARD — PHOTO BACKGROUND ================= */
 
 .services-hero-board {
     position: relative;
@@ -255,8 +249,6 @@
     }
 }
 
-/* ================= SERVICE GRID ================= */
-
 .services-grid-section {
     overflow: hidden;
 }
@@ -392,8 +384,6 @@
     transform: translate(3px, -3px);
 }
 
-/* ================= COMPARE SECTION ================= */
-
 .services-compare-section {
     padding-top: clamp(42px, 6vw, 86px);
 }
@@ -490,8 +480,6 @@
     max-width: 520px;
 }
 
-/* ================= PROCESS SECTION ================= */
-
 .services-process-section {
     overflow: hidden;
 }
@@ -572,8 +560,6 @@
     position: relative;
     z-index: 1;
 }
-
-/* ================= RESPONSIVE ================= */
 
 @media (max-width: 1180px) {
 
@@ -712,10 +698,6 @@
     }
 }
 
-/* ================================
-   SERVICES PAGE GRID SAME SIZE
-================================ */
-
 .services-page-grid {
     display: grid !important;
     grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
@@ -784,10 +766,6 @@
         min-height: 270px !important;
     }
 }
-
-/* ================================
-   SMART REQUEST MATRIX
-================================ */
 
 .smart-matrix-section {
     overflow: hidden;
@@ -894,10 +872,6 @@
 .smart-matrix-row:hover strong svg {
     transform: translate(2px, -2px);
 }
-
-/* ================================
-   PROVIDER FIT SECTION
-================================ */
 
 .provider-fit-section {
     overflow: hidden;
@@ -1078,10 +1052,6 @@
     }
 }
 
-/* ================================
-   PROVIDER FIT PHOTO BACKGROUND UPDATE
-================================ */
-
 .provider-fit-panel.dark-panel {
     position: relative;
     background:
@@ -1120,7 +1090,6 @@
     justify-self: end;
 }
 
-/* делаем линию/рамку мягче */
 .provider-fit-panel::before {
     border-color: rgba(255, 255, 255, 0.055) !important;
 }
@@ -1129,7 +1098,6 @@
     opacity: 0.45;
 }
 
-/* карточки меньше затемнены */
 .provider-fit-card {
     border-color: rgba(255, 255, 255, 0.14) !important;
     background:
@@ -1160,10 +1128,6 @@
     }
 }
 
-/* ================================
-   SMART MATRIX PANEL — FULL WIDTH TITLE + PHOTO BG
-================================ */
-
 .smart-matrix-panel {
     position: relative;
     overflow: hidden;
@@ -1177,7 +1141,6 @@
         url("../assets/images/services/smart-matrix-bg.jpg") center / cover no-repeat;
 }
 
-/* если у панели есть внутренний overlay или before — делаем мягче */
 .smart-matrix-panel::before {
     content: "";
     position: absolute;
@@ -1193,7 +1156,6 @@
     z-index: 1;
 }
 
-/* заголовочная часть */
 .smart-matrix-head {
     display: grid;
     grid-template-columns: 1fr !important;
@@ -1225,7 +1187,6 @@
     color: rgba(255, 255, 255, 0.78);
 }
 
-/* если внутри есть карточки — делаем их менее тёмными */
 .smart-matrix-card,
 .smart-matrix-item,
 .smart-matrix-box {
@@ -1240,7 +1201,6 @@
     background: rgba(255, 255, 255, 0.08);
 }
 
-/* адаптив */
 @media (max-width: 900px) {
     .smart-matrix-title-row {
         grid-template-columns: 1fr;
@@ -1252,10 +1212,6 @@
         max-width: 680px;
     }
 }
-
-/* ================================
-   SERVICES HERO — ANIMATED PIPE
-================================ */
 
 .services-hero {
     position: relative;
@@ -1326,7 +1282,6 @@
     z-index: 2;
 }
 
-/* лёгкая подложка, чтобы труба не мешала тексту */
 .services-hero-copy::before {
     content: "";
     position: absolute;
@@ -1364,7 +1319,6 @@
     }
 }
 
-/* tablet */
 @media (max-width: 980px) {
     .services-hero-pipe {
         opacity: 0.55;
@@ -1385,7 +1339,6 @@
     }
 }
 
-/* mobile */
 @media (max-width: 560px) {
     .services-hero-pipe {
         opacity: 0.38;

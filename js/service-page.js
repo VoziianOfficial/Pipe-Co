@@ -1,9 +1,5 @@
 "use strict";
 
-/*
-  Pipe & Co — individual service pages logic
-*/
-
 document.addEventListener("DOMContentLoaded", () => {
     initServiceHeroMotion();
 });

@@ -7,10 +7,6 @@
 @import url("./service-page.css");
 @import url("./legal.css");
 
-/* ================================
-   PIPE & CO — GLOBAL DESIGN SYSTEM
-================================ */
-
 :root {
     --color-bg: #EEF0F2;
     --color-bg-soft: #E1E4E7;
@@ -55,10 +51,6 @@
     --transition: 220ms ease;
     --transition-slow: 520ms cubic-bezier(0.16, 1, 0.3, 1);
 }
-
-/* ================================
-   RESET
-================================ */
 
 *,
 *::before,
@@ -143,10 +135,6 @@ h6 {
     background: var(--color-accent);
 }
 
-/* ================================
-   ACCESSIBILITY
-================================ */
-
 .skip-link {
     position: fixed;
     left: 18px;
@@ -172,10 +160,6 @@ h6 {
 [data-aos] {
     pointer-events: auto;
 }
-
-/* ================================
-   TYPOGRAPHY
-================================ */
 
 h1,
 h2,
@@ -257,10 +241,6 @@ p {
     width: 18px;
     height: 18px;
 }
-
-/* ================================
-   LAYOUT
-================================ */
 
 .page-shell {
     position: relative;
@@ -350,10 +330,6 @@ p {
     background: linear-gradient(180deg, transparent, rgba(46, 156, 139, 0.32), transparent);
 }
 
-/* ================================
-   BUTTONS
-================================ */
-
 .btn {
     position: relative;
     display: inline-flex;
@@ -439,10 +415,6 @@ p {
 .btn-block {
     width: 100%;
 }
-
-/* ================================
-   HEADER
-================================ */
 
 .site-header {
     position: sticky;
@@ -742,10 +714,6 @@ p {
     transform: rotate(-45deg);
 }
 
-/* ================================
-   MOBILE MENU
-================================ */
-
 .mobile-menu {
     position: fixed;
     inset: var(--header-height) 0 0;
@@ -925,10 +893,6 @@ p {
     text-underline-offset: 4px;
 }
 
-/* ================================
-   CARDS
-================================ */
-
 .info-card {
     position: relative;
     padding: 24px;
@@ -1041,10 +1005,6 @@ p {
     width: 18px;
     height: 18px;
 }
-
-/* ================================
-   FORMS
-================================ */
 
 .form-card {
     position: relative;
@@ -1226,10 +1186,6 @@ p {
     color: var(--color-muted);
 }
 
-/* ================================
-   FAQ
-================================ */
-
 .faq-list {
     display: grid;
     gap: 12px;
@@ -1278,10 +1234,6 @@ p {
 .faq-answer p {
     max-width: 840px;
 }
-
-/* ================================
-   FOOTER
-================================ */
 
 .site-footer {
     position: relative;
@@ -1452,10 +1404,6 @@ p {
     color: rgba(255, 255, 255, 0.48);
 }
 
-/* ================================
-   COOKIE BANNER
-================================ */
-
 .cookie-banner {
     position: fixed;
     left: 20px;
@@ -1520,10 +1468,6 @@ p {
     gap: 10px;
 }
 
-/* ================================
-   UTILS
-================================ */
-
 .no-scroll {
     overflow: hidden;
 }
@@ -1552,10 +1496,6 @@ p {
 .dark-panel p {
     color: rgba(255, 255, 255, 0.7);
 }
-
-/* ================================
-   RESPONSIVE
-================================ */
 
 @media (max-width: 1180px) {
     .desktop-nav {
@@ -1738,10 +1678,6 @@ p {
     margin-top: 24px;
 }
 
-/* ================================
-   SERVICE TICKER
-================================ */
-
 .service-ticker {
     position: sticky;
     top: var(--header-height);
@@ -1887,10 +1823,6 @@ p {
     }
 }
 
-/* ================================
-   EXTRA COMPACT SPACING
-================================ */
-
 .section {
     padding-top: clamp(20px, 3vw, 38px);
     padding-bottom: clamp(20px, 3vw, 38px);
@@ -1934,8 +1866,6 @@ p {
     margin-bottom: clamp(14px, 2vw, 22px);
 }
 
-/* уменьшаем расстояние между header / бегущей строкой / hero */
-
 .service-ticker-track {
     min-height: 42px;
     padding-top: 5px;
@@ -1956,8 +1886,6 @@ p {
     width: 14px;
     height: 14px;
 }
-
-/* если на мобильной всё ещё много воздуха */
 
 @media (max-width: 720px) {
     .section {
@@ -1985,10 +1913,6 @@ p {
     }
 }
 
-/* ================================
-   STICKY HEADER FIX
-================================ */
-
 .site-header {
     position: sticky !important;
     top: 0 !important;
@@ -2000,10 +1924,6 @@ p {
     top: var(--header-height) !important;
     z-index: 990 !important;
 }
-
-/* ================================
-   FIXED HEADER + FIXED SERVICE TICKER
-================================ */
 
 :root {
     --ticker-height: 42px;
@@ -2051,19 +1971,16 @@ p {
     height: 14px !important;
 }
 
-/* чтобы контент не залезал под fixed header + ticker */
 main {
     padding-top: calc(var(--header-height) + var(--ticker-height)) !important;
 }
 
-/* чтобы мобильное меню открывалось под header и перекрывало ticker */
 .mobile-menu {
     position: fixed !important;
     inset: var(--header-height) 0 0 !important;
     z-index: 1095 !important;
 }
 
-/* чтобы ничего не ломало fixed/sticky */
 .page-shell {
     overflow: visible !important;
 }
@@ -2091,10 +2008,6 @@ body {
         font-size: 0.62rem !important;
     }
 }
-
-/* ================================
-   INFINITE SERVICE TICKER FIX
-================================ */
 
 .service-ticker {
     overflow: hidden !important;
@@ -2136,17 +2049,11 @@ body {
     animation-play-state: paused !important;
 }
 
-/* ================================
-   GLOBAL COMPACT LAYOUT SYSTEM
-   tighter sections + narrower content
-================================ */
-
 :root {
     --container: 1080px;
     --container-wide: 1240px;
 }
 
-/* общий размер секций */
 .section {
     padding-top: clamp(22px, 3vw, 46px) !important;
     padding-bottom: clamp(22px, 3vw, 46px) !important;
@@ -2157,7 +2064,6 @@ body {
     padding-bottom: clamp(14px, 2vw, 28px) !important;
 }
 
-/* hero на всех страницах ниже и компактнее */
 .home-hero,
 .services-hero,
 .about-hero,
@@ -2169,12 +2075,10 @@ body {
     padding-bottom: clamp(24px, 3vw, 48px) !important;
 }
 
-/* если у тебя header fixed + ticker fixed */
 main {
     padding-top: calc(var(--header-height) + var(--ticker-height) + 10px) !important;
 }
 
-/* компактные заголовки */
 h1 {
     font-size: clamp(2.55rem, 6vw, 5.8rem) !important;
     line-height: 0.98 !important;
@@ -2195,7 +2099,6 @@ h3 {
     line-height: 1.55 !important;
 }
 
-/* меньше воздуха в шапках секций */
 .section-head {
     gap: clamp(14px, 2vw, 28px) !important;
     margin-bottom: clamp(18px, 2.2vw, 30px) !important;
@@ -2205,7 +2108,6 @@ h3 {
     margin-bottom: 12px !important;
 }
 
-/* компактнее сетки */
 .grid-2 {
     gap: clamp(18px, 3vw, 36px) !important;
 }
@@ -2218,7 +2120,6 @@ h3 {
     gap: 14px !important;
 }
 
-/* карточки меньше по высоте */
 .info-card {
     padding: 18px !important;
     border-radius: 22px !important;
@@ -2236,7 +2137,6 @@ h3 {
     height: 21px !important;
 }
 
-/* фото-карточки ниже */
 .photo-card {
     min-height: 300px !important;
     border-radius: 26px !important;
@@ -2252,7 +2152,6 @@ h3 {
     height: 36px !important;
 }
 
-/* hero visual меньше */
 .home-hero-visual,
 .services-hero-board,
 .about-hero-visual,
@@ -2261,7 +2160,6 @@ h3 {
     min-height: clamp(360px, 44vw, 500px) !important;
 }
 
-/* hero grid компактнее */
 .home-hero-grid,
 .services-hero-grid,
 .about-hero-grid,
@@ -2270,7 +2168,6 @@ h3 {
     gap: clamp(24px, 4vw, 58px) !important;
 }
 
-/* proof / маленькие блоки */
 .hero-proof {
     gap: 10px !important;
     margin-top: 4px !important;
@@ -2281,7 +2178,6 @@ h3 {
     border-radius: 18px !important;
 }
 
-/* формы компактнее */
 .form-card {
     padding: clamp(16px, 2.2vw, 24px) !important;
     border-radius: 26px !important;
@@ -2307,7 +2203,6 @@ h3 {
     max-height: 130px !important;
 }
 
-/* CTA panels компактнее */
 .request-panel,
 .service-cta-panel,
 .about-cta-panel,
@@ -2318,7 +2213,6 @@ h3 {
     border-radius: 32px !important;
 }
 
-/* service pages */
 .service-overview-grid,
 .contact-main-grid,
 .about-model-grid {
@@ -2333,7 +2227,6 @@ h3 {
     min-height: auto !important;
 }
 
-/* FAQ компактнее */
 .faq-list {
     gap: 9px !important;
 }
@@ -2346,7 +2239,6 @@ h3 {
     padding: 0 18px 16px !important;
 }
 
-/* footer компактнее */
 .site-footer {
     padding-top: 42px !important;
     padding-bottom: 20px !important;
@@ -2366,7 +2258,6 @@ h3 {
     padding-top: 18px !important;
 }
 
-/* mobile */
 @media (max-width: 720px) {
     :root {
         --container: 100%;
@@ -2413,10 +2304,6 @@ h3 {
         min-height: 340px !important;
     }
 }
-
-/* ================================
-   PREMIUM MONOGRAM LOGO
-================================ */
 
 .logo-mark-word {
     display: grid;
@@ -2471,10 +2358,6 @@ h3 {
     pointer-events: none;
 }
 
-/* ================================
-   PLATINUM BACKGROUND POLISH
-================================ */
-
 .site-header {
     background: rgba(231, 234, 237, 0.9) !important;
 }
@@ -2490,12 +2373,7 @@ h3 {
 .service-ticker::after {
     background: linear-gradient(270deg, rgba(231, 234, 237, 0.98), transparent) !important;
 }
-/* ================================
-   PREMIUM GLOBAL POLISH
-   tighter spacing / cleaner rhythm
-================================ */
 
-/* общий ритм секций */
 .section {
     padding-top: clamp(28px, 4vw, 56px);
     padding-bottom: clamp(28px, 4vw, 56px);
@@ -2506,7 +2384,6 @@ h3 {
     padding-bottom: clamp(18px, 2.4vw, 34px);
 }
 
-/* hero-секции компактнее */
 .home-hero,
 .services-hero,
 .about-hero,
@@ -2517,19 +2394,16 @@ h3 {
     padding-bottom: clamp(34px, 5vw, 72px);
 }
 
-/* заголовки секций ближе к контенту */
 .section-head {
     gap: clamp(16px, 2.6vw, 34px);
     margin-bottom: clamp(22px, 3.2vw, 42px);
 }
 
-/* текст в секциях аккуратнее */
 .section-head p,
 .text-lead {
     max-width: 620px;
 }
 
-/* карточки становятся более premium и одинаковыми */
 .info-card,
 .value-card,
 .snapshot-card,
@@ -2542,7 +2416,6 @@ h3 {
     box-shadow: 0 14px 38px rgba(17, 20, 23, 0.055);
 }
 
-/* hover менее резкий, дороже */
 .info-card:hover,
 .value-card:hover,
 .snapshot-card:hover,
@@ -2556,7 +2429,6 @@ h3 {
     box-shadow: 0 20px 52px rgba(17, 20, 23, 0.085);
 }
 
-/* фото-карточки одинаковее и спокойнее */
 .photo-card {
     min-height: 340px;
     border-radius: 30px;
@@ -2577,20 +2449,17 @@ h3 {
     line-height: 1.55;
 }
 
-/* затемнение фото мягче и дороже */
 .photo-card::before {
     background:
         linear-gradient(180deg, rgba(5, 6, 7, 0.04), rgba(5, 6, 7, 0.62)),
         linear-gradient(90deg, rgba(5, 6, 7, 0.48), transparent 66%);
 }
 
-/* меньше “прыжков” на hover */
 .photo-card:hover img {
     transform: scale(1.035);
     filter: saturate(1.02) contrast(1.02);
 }
 
-/* кнопки чуть компактнее и солиднее */
 .btn {
     min-height: 48px;
     padding-inline: 20px;
@@ -2605,7 +2474,6 @@ h3 {
     box-shadow: 0 18px 34px rgba(37, 127, 114, 0.24);
 }
 
-/* иконки в карточках спокойнее */
 .icon-box,
 .value-card span,
 .snapshot-card span,
@@ -2614,7 +2482,6 @@ h3 {
     box-shadow: none;
 }
 
-/* тёмные панели дороже */
 .dark-panel,
 .about-model-panel,
 .about-trust-panel,
@@ -2624,7 +2491,6 @@ h3 {
         linear-gradient(145deg, #111417 0%, #1d2327 56%, #252b31 100%);
 }
 
-/* футер компактнее */
 .site-footer {
     padding-top: clamp(46px, 6vw, 68px);
 }
@@ -2637,7 +2503,6 @@ h3 {
     margin-top: 30px;
 }
 
-/* cookie banner аккуратнее */
 .cookie-banner {
     max-width: 900px;
     border-radius: 24px;
@@ -2647,7 +2512,6 @@ h3 {
     padding: 16px;
 }
 
-/* mobile rhythm */
 @media (max-width: 720px) {
     .section {
         padding-top: 24px;
@@ -2683,10 +2547,6 @@ h3 {
         padding-inline: 17px;
     }
 }
-
-/* ================================
-   REQUEST SECTION — TABLET / MOBILE COMPACT
-================================ */
 
 @media (max-width: 980px) {
     .request-section {
@@ -2851,10 +2711,6 @@ h3 {
     }
 }
 
-/* ================================
-   REQUEST SECTION — FORM ONLY ON TABLET / MOBILE
-================================ */
-
 @media (max-width: 980px) {
     .request-section .request-copy {
         display: none !important;
@@ -2940,10 +2796,6 @@ h3 {
     }
 }
 
-/* ================================
-   REQUEST FORM — TABLET HALF WIDTH
-================================ */
-
 @media (min-width: 721px) and (max-width: 980px) {
 
     .request-section .request-form,
@@ -2954,13 +2806,6 @@ h3 {
         margin-inline: auto !important;
     }
 }
-
-/* =========================================
-   GLOBAL PREMIUM HOVERS / COLOR MOTION
-   Paste at the END of style.css
-========================================= */
-
-/* ---------- Global smoothness ---------- */
 
 a,
 button,
@@ -2997,14 +2842,10 @@ request-flow-step,
         filter 260ms ease;
 }
 
-/* ---------- Selection color ---------- */
-
 ::selection {
     color: var(--color-white);
     background: var(--color-accent);
 }
-
-/* ---------- Buttons ---------- */
 
 .btn {
     position: relative;
@@ -3045,8 +2886,6 @@ request-flow-step,
     box-shadow: 0 16px 36px rgba(17, 20, 23, 0.10);
 }
 
-/* ---------- Header nav ---------- */
-
 .nav-link {
     position: relative;
 }
@@ -3081,8 +2920,6 @@ request-flow-step,
     color: var(--color-accent-hover);
 }
 
-/* ---------- Service ticker ---------- */
-
 .service-ticker {
     transition:
         background 260ms ease,
@@ -3093,8 +2930,6 @@ request-flow-step,
     background: rgba(255, 255, 255, 0.78);
     border-color: rgba(46, 156, 139, 0.18);
 }
-
-/* ---------- Universal cards ---------- */
 
 .value-card,
 .snapshot-card,
@@ -3183,8 +3018,6 @@ request-flow-step,
     opacity: 1;
 }
 
-/* ---------- Card icons ---------- */
-
 .value-card:hover>span,
 .snapshot-card:hover>span,
 .factor-card:hover>span,
@@ -3202,8 +3035,6 @@ request-flow-step,
     color: var(--color-white);
     box-shadow: 0 18px 34px rgba(17, 20, 23, 0.18);
 }
-
-/* ---------- Dark panels cards ---------- */
 
 .dark-panel .btn-outline:hover,
 .about-model-panel .model-card:hover,
@@ -3227,8 +3058,6 @@ request-flow-step,
 .service-cta-panel:hover {
     filter: saturate(1.06) contrast(1.02);
 }
-
-/* ---------- Image tiles ---------- */
 
 .services-tile:hover {
     transform: translateY(-8px);
@@ -3257,8 +3086,6 @@ request-flow-step,
     color: var(--color-white);
 }
 
-/* ---------- Hero mini badges ---------- */
-
 .service-mini-badge:hover,
 .contact-hero-points span:hover,
 .story-highlights span:hover,
@@ -3274,8 +3101,6 @@ request-flow-step,
     color: var(--color-dark);
     background: rgba(255, 255, 255, 0.94);
 }
-
-/* ---------- Forms ---------- */
 
 input,
 textarea,
@@ -3303,8 +3128,6 @@ select:focus {
     background: rgba(255, 255, 255, 0.96);
 }
 
-/* ---------- FAQ ---------- */
-
 .faq-item {
     transition:
         transform 260ms ease,
@@ -3328,8 +3151,6 @@ select:focus {
     color: var(--color-accent-hover);
 }
 
-/* ---------- Footer ---------- */
-
 .footer-links a,
 .footer-contact-list a,
 .footer-legal-title {
@@ -3349,8 +3170,6 @@ select:focus {
     color: var(--color-accent-hover);
     transform: scale(1.08);
 }
-
-/* ---------- Mobile menu ---------- */
 
 .mobile-nav-link:hover,
 .mobile-accordion-btn:hover,
@@ -3378,13 +3197,9 @@ select:focus {
     color: var(--color-white);
 }
 
-/* ---------- Cookie banner ---------- */
-
 .cookie-banner .btn:hover {
     transform: translateY(-2px);
 }
-
-/* ---------- Soft animated border for important panels ---------- */
 
 .about-cta,
 .service-cta-panel,
@@ -3418,8 +3233,6 @@ select:focus {
         0 0 0 1px rgba(46, 156, 139, 0.08);
 }
 
-/* ---------- Reduce heavy hover on touch devices ---------- */
-
 @media (hover: none) {
 
     .btn:hover,
@@ -3438,8 +3251,6 @@ select:focus {
         transform: none;
     }
 }
-
-/* ================= MOBILE SERVICES LINK + TOGGLE ================= */
 
 .mobile-services-row {
     display: grid;
@@ -3483,8 +3294,6 @@ select:focus {
     }
 }
 
-/* FIX: center services dropdown arrow in mobile menu */
-
 .mobile-services-toggle-btn {
     display: flex !important;
     align-items: center !important;
@@ -3523,8 +3332,6 @@ select:focus {
     }
 }
 
-/* Hide About story section on tablet and mobile */
-
 @media (max-width: 1180px) {
     .about-story-section {
         display: none !important;
@@ -3562,10 +3369,6 @@ select:focus {
         display: none !important;
     }
 }
-
-/* ================================
-   FOOTER COLUMNS TITLE FIX
-================================ */
 
 .footer-cols {
     gap: clamp(24px, 4vw, 42px) !important;

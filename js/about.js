@@ -1,9 +1,5 @@
 "use strict";
 
-/*
-  Pipe & Co — about page logic
-*/
-
 document.addEventListener("DOMContentLoaded", () => {
     initAboutImageParallax();
     initAboutCounters();
