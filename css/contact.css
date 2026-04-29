@@ -214,9 +214,12 @@
     position: relative;
     min-height: 280px;
     display: grid;
+    grid-template-rows: auto 1fr auto;
     align-content: start;
     gap: 14px;
     padding: 24px;
+    padding-top: 86px;
+    padding-right: 92px;
     border: 1px solid var(--color-border);
     border-radius: 30px;
     background: rgba(255, 255, 255, 0.78);
@@ -241,11 +244,14 @@
 }
 
 .contact-info-card>span {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 1;
     display: grid;
     place-items: center;
     width: 56px;
     height: 56px;
-    margin-bottom: 12px;
     border-radius: 20px;
     color: var(--color-white);
     background: var(--color-accent);
@@ -278,6 +284,10 @@
     color: var(--color-accent-hover);
     text-decoration: underline;
     text-underline-offset: 5px;
+}
+
+.contact-info-card p {
+    max-width: 34ch;
 }
 
 .contact-info-card:hover {
@@ -461,6 +471,8 @@
 
     .contact-info-card {
         min-height: auto;
+        padding-top: 80px;
+        padding-right: 84px;
     }
 }
 
