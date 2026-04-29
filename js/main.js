@@ -503,7 +503,6 @@ function showFormMessage(element, text, type) {
 function initLibraries() {
     initLucideIcons();
     initAos();
-    initGsapSharedAnimations();
 }
 
 function initLucideIcons() {
@@ -521,48 +520,4 @@ function initAos() {
             offset: 90,
         });
     }
-}
-
-function initGsapSharedAnimations() {
-    if (!window.gsap) return;
-
-    const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-
-    if (reduceMotion) return;
-
-    const revealItems = document.querySelectorAll("[data-reveal]");
-
-    revealItems.forEach((item) => {
-        window.gsap.fromTo(
-            item,
-            {
-                y: 26,
-                opacity: 0,
-            },
-            {
-                y: 0,
-                opacity: 1,
-                duration: 0.9,
-                ease: "power3.out",
-                scrollTrigger: window.ScrollTrigger
-                    ? {
-                        trigger: item,
-                        start: "top 86%",
-                    }
-                    : undefined,
-            }
-        );
-    });
-
-    const floatItems = document.querySelectorAll("[data-float]");
-
-    floatItems.forEach((item, index) => {
-        window.gsap.to(item, {
-            y: index % 2 === 0 ? -12 : 12,
-            duration: 2.8 + index * 0.2,
-            repeat: -1,
-            yoyo: true,
-            ease: "sine.inOut",
-        });
-    });
 }

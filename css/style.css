@@ -1,12 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Manrope:wght@500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap");
 
-@import url("./home.css");
-@import url("./services.css");
-@import url("./about.css");
-@import url("./contact.css");
-@import url("./service-page.css");
-@import url("./legal.css");
-
 :root {
     --color-bg: #EEF0F2;
     --color-bg-soft: #E1E4E7;
