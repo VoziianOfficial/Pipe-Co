@@ -537,17 +537,17 @@
     pointer-events: none;
 }
 
-.service-hero-side {
-    position: relative;
-    min-height: 420px;
-    border: 1px solid var(--color-border);
-    border-radius: 36px;
-    background:
-        linear-gradient(180deg, rgba(17, 20, 23, 0.16), rgba(17, 20, 23, 0.46)),
-        url("../assets/images/services/service-page-hero.jpg") center / cover no-repeat;
-    box-shadow: var(--shadow-card);
-    overflow: hidden;
-}
+	.service-hero-side {
+	    position: relative;
+	    min-height: 420px;
+	    border: 1px solid var(--color-border);
+	    border-radius: 36px;
+	    background:
+	        linear-gradient(180deg, rgba(17, 20, 23, 0.16), rgba(17, 20, 23, 0.46)),
+	        url("../assets/images/services/emergency-plumbing.jpg") center / cover no-repeat;
+	    box-shadow: var(--shadow-card);
+	    overflow: hidden;
+	}
 
 .service-hero-side::before {
     content: "";
@@ -1178,17 +1178,17 @@
     }
 }
 
-.drain-cleaning-page .service-hero-side {
-    background:
-        linear-gradient(180deg, rgba(17, 20, 23, 0.16), rgba(17, 20, 23, 0.46)),
-        url("../assets/images/services/drain-cleaning-hero.jpg") center / cover no-repeat;
-}
+	.drain-cleaning-page .service-hero-side {
+	    background:
+	        linear-gradient(180deg, rgba(17, 20, 23, 0.16), rgba(17, 20, 23, 0.46)),
+	        url("../assets/images/home/hero-plumbing.jpg") center / cover no-repeat;
+	}
 
-.bathroom-plumbing-page .service-hero-side {
-    background:
-        linear-gradient(180deg, rgba(17, 20, 23, 0.16), rgba(17, 20, 23, 0.46)),
-        url("../assets/images/services/bathroom-plumbing-hero.jpg") center / cover no-repeat;
-}
+	.bathroom-plumbing-page .service-hero-side {
+	    background:
+	        linear-gradient(180deg, rgba(17, 20, 23, 0.16), rgba(17, 20, 23, 0.46)),
+	        url("../assets/images/services/drain-cleaning.jpg") center / cover no-repeat;
+	}
 
 .water-heater-page .service-hero-side {
     background:
@@ -1202,11 +1202,11 @@
         url("../assets/images/home/home-hero.jpg") center center / cover no-repeat;
 }
 
-.service-hero--leak {
-    background:
-        linear-gradient(90deg, rgba(16, 18, 22, 0.84) 0%, rgba(16, 18, 22, 0.66) 38%, rgba(16, 18, 22, 0.48) 65%, rgba(16, 18, 22, 0.72) 100%),
-        url("../assets/images/services/drain-cleaning-hero-card.jpg") center center / cover no-repeat;
-}
+	.service-hero--leak {
+	    background:
+	        linear-gradient(90deg, rgba(16, 18, 22, 0.84) 0%, rgba(16, 18, 22, 0.66) 38%, rgba(16, 18, 22, 0.48) 65%, rgba(16, 18, 22, 0.72) 100%),
+	        url("../assets/images/home/hero-detail-1.jpg") center center / cover no-repeat;
+	}
 
 .service-hero--pipe-repair {
     background:
