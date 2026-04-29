@@ -8,6 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
     initCookieBanner();
     initForms();
     initLibraries();
+    initHeroMicroParallax();
 });
 
 function getConfig() {
@@ -520,4 +521,38 @@ function initAos() {
             offset: 90,
         });
     }
+}
+
+function initHeroMicroParallax() {
+    const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    const hasFinePointer = window.matchMedia("(hover: hover) and (pointer: fine)").matches;
+
+    if (reduceMotion || !hasFinePointer) return;
+
+    const heroes = document.querySelectorAll(
+        ".home-hero, .services-hero, .about-hero, .contact-hero, .service-hero, .legal-hero"
+    );
+
+    heroes.forEach((hero) => {
+        const visual =
+            hero.querySelector(
+                ".home-hero-visual, .services-hero-board, .about-hero-visual, .contact-hero-visual, .service-hero-side, .legal-hero-inner"
+            ) || hero;
+
+        hero.addEventListener("pointermove", (event) => {
+            const rect = hero.getBoundingClientRect();
+            const offsetX = (event.clientX - rect.left) / rect.width - 0.5;
+            const offsetY = (event.clientY - rect.top) / rect.height - 0.5;
+            const tiltX = offsetX * 10;
+            const tiltY = offsetY * 10;
+
+            visual.style.transform = `translate3d(${tiltX.toFixed(2)}px, ${tiltY.toFixed(2)}px, 0)`;
+            visual.style.boxShadow = `${(-tiltX * 0.5).toFixed(2)}px ${(-tiltY * 0.5).toFixed(2)}px 36px rgba(46, 156, 139, 0.16)`;
+        });
+
+        hero.addEventListener("pointerleave", () => {
+            visual.style.transform = "";
+            visual.style.boxShadow = "";
+        });
+    });
 }
