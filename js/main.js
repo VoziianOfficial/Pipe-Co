@@ -527,11 +527,20 @@ function initHeroMicroParallax() {
     const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
     const hasFinePointer = window.matchMedia("(hover: hover) and (pointer: fine)").matches;
 
-    if (reduceMotion || !hasFinePointer) return;
-
     const heroes = document.querySelectorAll(
         ".home-hero, .services-hero, .about-hero, .contact-hero, .service-hero, .legal-hero"
     );
+
+    heroes.forEach((hero) => {
+        if (!hero.querySelector(".hero-glow-layer")) {
+            const layer = document.createElement("span");
+            layer.className = "hero-glow-layer";
+            layer.setAttribute("aria-hidden", "true");
+            hero.prepend(layer);
+        }
+    });
+
+    if (reduceMotion || !hasFinePointer) return;
 
     heroes.forEach((hero) => {
         const visual =
@@ -546,11 +555,15 @@ function initHeroMicroParallax() {
             const tiltX = offsetX * 10;
             const tiltY = offsetY * 10;
 
+            hero.style.setProperty("--hero-glow-x", `${((offsetX + 0.5) * 100).toFixed(2)}%`);
+            hero.style.setProperty("--hero-glow-y", `${((offsetY + 0.5) * 100).toFixed(2)}%`);
             visual.style.transform = `translate3d(${tiltX.toFixed(2)}px, ${tiltY.toFixed(2)}px, 0)`;
             visual.style.boxShadow = `${(-tiltX * 0.5).toFixed(2)}px ${(-tiltY * 0.5).toFixed(2)}px 36px rgba(46, 156, 139, 0.16)`;
         });
 
         hero.addEventListener("pointerleave", () => {
+            hero.style.setProperty("--hero-glow-x", "50%");
+            hero.style.setProperty("--hero-glow-y", "30%");
             visual.style.transform = "";
             visual.style.boxShadow = "";
         });

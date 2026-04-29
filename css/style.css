@@ -2933,22 +2933,91 @@ request-flow-step,
     border-color: rgba(46, 156, 139, 0.18);
 }
 
-.value-card,
-.snapshot-card,
-.factor-card,
-.service-detail-card,
-.service-pipe-card,
-.request-flow-step,
-.contact-info-card,
-.model-card,
-.process-node,
-.compare-card,
-.emergency-prep-card,
-.water-heater-detail-card,
-.leak-detail-card,
-.pipe-detail-card {
-    position: relative;
-    isolation: isolate;
+	.value-card,
+	.snapshot-card,
+	.factor-card,
+	.service-detail-card,
+	.service-pipe-card,
+	.request-flow-step,
+	.contact-info-card,
+	.model-card,
+	.process-node,
+	.compare-card,
+	.emergency-prep-card,
+	.water-heater-detail-card,
+	.leak-detail-card,
+	.pipe-detail-card {
+	    position: relative;
+	    isolation: isolate;
+	}
+
+.card-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    width: fit-content;
+    min-height: 26px;
+    padding: 0 10px;
+    border: 1px solid rgba(17, 20, 23, 0.14);
+    border-radius: 999px;
+    font-family: var(--font-accent);
+    font-size: 0.62rem;
+    font-weight: 800;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: rgba(17, 20, 23, 0.72);
+    background: rgba(255, 255, 255, 0.72);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .card-badge {
+        transition: none !important;
+    }
+}
+
+.card--accent {
+    background: rgba(46, 156, 139, 0.06) !important;
+    border-color: rgba(46, 156, 139, 0.22) !important;
+}
+
+.card--accent::after {
+    opacity: 0.36;
+}
+
+.card--accent:hover {
+    transform: translateY(-6px);
+    box-shadow:
+        0 28px 70px rgba(17, 20, 23, 0.12),
+        0 0 0 1px rgba(46, 156, 139, 0.12);
+}
+
+.card--horizontal {
+    display: grid;
+    grid-template-columns: 56px 1fr;
+    gap: 14px;
+    align-items: start;
+}
+
+.card--horizontal > span:first-child {
+    grid-row: 1 / -1;
+    width: 56px;
+    height: 56px;
+}
+
+.card--horizontal h3,
+.card--horizontal p,
+.card--horizontal a {
+    grid-column: 2;
+}
+
+.card--number .request-flow-number {
+    font-size: 1.26rem;
+    letter-spacing: 0.08em;
+}
+
+.card--number > span:first-child {
+    font-size: 1.08rem;
+    letter-spacing: 0.08em;
 }
 
 .value-card::after,
@@ -3405,21 +3474,13 @@ select:focus {
 .contact-hero,
 .service-hero,
 .legal-hero {
-    --hero-shift-x: 0px;
-    --hero-shift-y: 0px;
     --hero-glow-x: 50%;
     --hero-glow-y: 30%;
     position: relative;
     overflow: hidden;
 }
 
-.home-hero::after,
-.services-hero::after,
-.about-hero::after,
-.contact-hero::after,
-.service-hero::after,
-.legal-hero::after {
-    content: "";
+.hero-glow-layer {
     position: absolute;
     inset: 0;
     pointer-events: none;
@@ -3427,18 +3488,9 @@ select:focus {
             rgba(255, 255, 255, 0.18) 0%,
             rgba(255, 255, 255, 0.08) 18%,
             transparent 42%);
-    transition: background-position 300ms ease, opacity 280ms ease;
     opacity: 0.7;
-}
-
-.home-hero::before,
-.services-hero::before,
-.about-hero::before,
-.contact-hero::before,
-.service-hero::before,
-.legal-hero::before {
-    transform: translate3d(calc(var(--hero-shift-x) * 0.35), calc(var(--hero-shift-y) * 0.35), 0);
-    transition: transform 320ms ease;
+    transition: opacity 280ms ease;
+    z-index: 0;
 }
 
 .value-card,
@@ -3553,10 +3605,12 @@ select:focus {
     -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
     -webkit-mask-composite: xor;
     mask-composite: exclude;
-    opacity: 0.45;
+    opacity: 0.42;
     pointer-events: none;
-    background-size: 220% 220%;
-    transition: opacity 280ms ease;
+    background-size: 260% 260%;
+    animation: cta-border-flow 8s linear infinite;
+    transition: opacity 280ms ease, filter 320ms ease;
+    filter: saturate(0.88);
 }
 
 @media (hover: hover) and (pointer: fine) {
@@ -3573,8 +3627,9 @@ select:focus {
     .water-heater-diagnostic-panel:hover::after,
     .leak-scan-panel:hover::after,
     .pipe-pressure-panel:hover::after {
-        opacity: 0.82;
-        animation: cta-border-flow 2.4s linear infinite;
+        opacity: 0.72;
+        animation-duration: 3.4s;
+        filter: saturate(1.02);
     }
 }
 
@@ -3652,5 +3707,10 @@ select:focus {
         animation: none !important;
         transition: none !important;
         transform: none !important;
+    }
+
+    .hero-glow-layer {
+        transition: none !important;
+        opacity: 0.5;
     }
 }

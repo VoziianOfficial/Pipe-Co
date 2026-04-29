@@ -436,6 +436,11 @@
     gap: 14px;
 }
 
+.compare-stack .compare-card:first-child {
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
 .compare-card {
     display: grid;
     grid-template-columns: 74px 1fr;
@@ -450,6 +455,19 @@
         transform var(--transition),
         background var(--transition),
         border-color var(--transition);
+}
+
+.compare-card.card--accent {
+    background: rgba(46, 156, 139, 0.06);
+    border-color: rgba(46, 156, 139, 0.22);
+}
+
+.compare-card.card--accent h3 {
+    max-width: 520px;
+}
+
+.compare-card.card--accent .card-badge {
+    margin-bottom: 10px;
 }
 
 .compare-card:hover {
