@@ -2,9 +2,66 @@
 
 document.addEventListener("DOMContentLoaded", () => {
     initReviewsSlider();
+    initHomeServicesSlider();
     initHeroPointerGlow();
     initMapMicroInteraction();
 });
+
+function initHomeServicesSlider() {
+    const sliderElement = document.querySelector(".home-services-slider");
+
+    if (!sliderElement || typeof Swiper === "undefined") return;
+
+    const nextBtn = document.querySelector(".home-services-nav-next");
+    const prevBtn = document.querySelector(".home-services-nav-prev");
+    const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+    const slider = new Swiper(sliderElement, {
+        slidesPerView: 1,
+        spaceBetween: 16,
+        speed: reduceMotion ? 600 : 700,
+        loop: true,
+        loopAdditionalSlides: 2,
+        loopPreventsSliding: false,
+        grabCursor: true,
+        watchOverflow: true,
+        centeredSlides: false,
+        preventInteractionOnTransition: false,
+        autoplay: reduceMotion
+            ? false
+            : {
+                  delay: 2600,
+                  disableOnInteraction: false,
+                  pauseOnMouseEnter: true,
+              },
+        breakpoints: {
+            720: {
+                slidesPerView: 2,
+                spaceBetween: 18,
+            },
+            1180: {
+                slidesPerView: 3,
+                spaceBetween: 18,
+            },
+        },
+    });
+
+    if (nextBtn) {
+        nextBtn.addEventListener("click", (event) => {
+            event.preventDefault();
+            event.stopPropagation();
+            slider.slideNext(slider.params.speed, true);
+        });
+    }
+
+    if (prevBtn) {
+        prevBtn.addEventListener("click", (event) => {
+            event.preventDefault();
+            event.stopPropagation();
+            slider.slidePrev(slider.params.speed, true);
+        });
+    }
+}
 
 function initReviewsSlider() {
     const sliderElement = document.querySelector(".reviews-slider");
